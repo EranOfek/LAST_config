@@ -1,11 +1,11 @@
-function [Data,Unit]=read_config_file(ConfigFileNames,Format)
+function [Data,Unit]=read_config(ConfigFileNames,Format)
 % Return configuration parameters for LAST node, mount, telescope
 % Package: +configfile
 % Input  : - A configuration file name to read.
 %          - File format:
 %            'txt'. Default.
 %            'json'
-% Example: Config=configfile.read_config_file('config.mount_1_1.txt');
+% Example: Config=configfile.read_config('config.mount_1_1.txt');
 
 
 if nargin<2
