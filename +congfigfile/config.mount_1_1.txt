@@ -1,0 +1,11 @@
+NodeNumber     : 1             : 
+MountNumber    : 1             :
+MountType      : Xerxes        :
+MountSerialNum :               : 
+Long           : 35.02         : deg
+Lat            : 30.04         : deg
+Height         : 400           : m
+AzAltLimi      : [[0, 0];[90, 10];[180, 15];[270, 10];[360, 0]]  : deg
+AltLimit       : 15            : deg
+HALimit        : 120           : deg
+

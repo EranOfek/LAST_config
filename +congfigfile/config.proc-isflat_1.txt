@@ -1,0 +1,14 @@
+%--- isflat parameters ---
+WhichInd         : 1                       :
+BackFun          : @imUtil.background.mode : 
+BackFunPar       : {true,true,0.1}         : 
+VarFun           : []                      : 
+VarFunPar        : {}                      : 
+FlatRange        : [50 50000]              : DN
+% in the future replace with header keyword: 
+SatLevel         : 60000                   : DN
+SatQuantile      : 0.99                    : 
+CheckFileName    : 0                       : bool
+FileNameKey      : flat                    : 
+FlatTemplate     : []                      : 
+VariationThreshold : 0.2                   :

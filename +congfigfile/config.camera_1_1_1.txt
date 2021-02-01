@@ -1,0 +1,26 @@
+NodeNumber       : 1             : 
+MountNumber      : 1             :
+CameraNumber     : 1             :
+CameraType       : QHY600-PH     :
+CameraSerialNum  :               :
+BaseDir          : /data/euler   :
+% relative to BaseDir
+DataDir          : archive/LAST  : 
+% relative to BaseDir
+DarkDBDir        : archive/LAST/darkDB :
+FlatDBDir        : archive/LAST/flatDB :
+DarkDB           : darkDB.mat    :
+FlatDB           : flatDB.mat    :
+Filter           : clear         :
+% CameraMode: highRN | lowRN
+CameraMode       : highRN        :
+RN_highRN        : 3.5           :
+RN_lowRN         : 1.5           :
+Gain_highRN      : 0.77          :
+Gain_lowRN       : 0.77          :
+DC_highRN        : 0.01          :
+DC_lowRN         : 0.01          :
+DefaultSaturation: 60000         : 
+
+
+

@@ -1,0 +1,27 @@
+%--- flat parameters ---
+ImageFactor       : []                         :
+ImageBackFun      : @imUtil.background.mode    :
+ImageBackFunPar   : {true,true,0.1}            :
+FlatFactor        : []                         :
+FlatBackFun       : @imUtil.background.mode    :
+FlatBackFunPar    : {true,true,0.1}            :
+IndexDim          : 3                          : 
+MeanFun           : wsigclip                   : 
+MeanFunPar        : {'MeanFun',@nanmean,'StdFun','rstd','Nsigma',[5 5],'MaxIter',3} :
+VarFun            : rvar                       : 
+VarFunPar         : {}                         : 
+% flag statistics
+MeanFunFlag       : @nanmean                   : 
+StdFunFlag        : rstd                       : 
+ThresholdSigma    : 5                          : 
+Abs               : 1                          : 
+% flag values
+HighStdFlagName   : Flat_HighStd               : 
+HighStdThresholdVal : 0.01                     : 
+LowValFlagName    : Flat_SubResponse           :
+LowValThreshold   : 0.3                        : 
+Near0FlagName     : Flat_Near0                 :
+Near0Threshold    : 0.05                       :
+PoorInfoFlagName  : Flat_PoorInfo              :
+PoorInfoThreshold : 3                          : 
+PutHeader1        : 0                          :

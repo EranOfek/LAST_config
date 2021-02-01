@@ -1,0 +1,19 @@
+%--- dark parameters ---
+%MeanFun                   : wsigclip        :
+MeanFun                   : sigclip        : 
+MeanFunPar                : {'MeanFun',@nanmean,'StdFun','rstd','Nsigma',[7 7],'MaxIter',0}  : 
+VarFun                    : rvar            :
+VarFunPar                 : {}              : 
+MeanFunFlag               : @nanmean        : 
+StdFunFlag                : rstd            : 
+ThresholdSigma            : 10              : 
+Abs                       : 1               : bool
+FlareFlagName             : Bias_Flaring    : 
+FlareFracRange            : [0.5 1]         : 
+LowStdFlagName            : Bias_Noise0     : 
+LowStdThresholdVal        : 0.1             : 
+HighStdFlagName           : Bias_HighStd    : 
+HighStdThresholdVal       : 40              : 
+HighValFlagName           : Bias_HighVal    : 
+FlagThresholdVal          : 500             : 
+PutHeader1                : 0               : bool

@@ -1,0 +1,5 @@
+%--- flatbackground parameters ---
+BackFun       : @imUtil.background.mode       :
+BackFunPar    : {[1 2]}                       :
+VarFun        : @imUtil.background.rvar       :
+SubSizeXY     : full                          :

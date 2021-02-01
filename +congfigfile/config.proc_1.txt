@@ -1,0 +1,32 @@
+NodeNumber                     : 1             :
+ImageFileType                  : fits          : 
+CatalogFileType                : hdf5          :
+CatalogFileDataset             : /Cat          :
+DataType                       : single        : 
+CatDataType                    : single        :
+CameraMode                     : highRN        :
+Gain                           : 0.77          :
+ReadNoise                      : 3.5           :
+DarkCurrent                    : 0.01          :
+% full detector including overscan [Xmin Xmax Ymin Ymax]
+DETSEC             : [1 6389 1 9576]   : pix
+% detector without overscan [Xmin Xmax Ymin Ymax]
+CCDSEC             : [1 6387 1 9576]   : pix
+% Sub image size [X, Y] (approximate)
+SubSizeXY          : [1024 1024]       : pix
+% overlap between sub images [X, Y]
+OverlapXY          : [16 16]           : pix
+
+% min number of calib images to combine
+MinNUM_COMB        : 5                 :
+%
+MaxNumImagesVisit  : 20                              :
+% Near Edge flagging
+NearEdgeDist       : 5                               : pix
+% Threshold for CR detection using imUtil.sources.find_crHT
+DetectionThresholdCR : 4                             : SNR
+% astrometry
+Tran                 : @tran2dCl                     :
+TranPar              : cheby1_3                      :
+
+

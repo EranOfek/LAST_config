@@ -1,0 +1,37 @@
+%--- fit_astrometry parameters ---
+%RA                : RA                     : KeyName
+%Dec               : Dec                    : KeyName
+Scale             : 1.25                   : arcsec/pix
+Rot               : (-10:0.5:10)           : deg
+Flip              : [-1 -1]                :
+Size              : [2.5 2.5]              : deg
+SizeCatXY         : []                     : NOT_USED
+ColX              : X                      : 
+ColY              : Y                      : 
+ColMag            : FLUX_CONV_2            : 
+ZP                : 27                     : 
+MagFluxUnits      : flux                   :
+RefCat            : GAIADR2                :
+Con               : {{'ExcessNoise',[0 10]},{'Mag_G',[10 19]}} :
+ColRefRA          : {'RA'}                 :
+ColRefDec         : {'Dec'}                :
+ColRefMag         : {'Mag'}                :
+ColRefColor       : {'Color'}              :
+ColRefAM          : {'AM'}                 :
+ColRefPA          : {'PA'}                 :
+%ObsGeoPos         :                        :
+RefMagRange       : [12 19]                :
+ColRowPar         : {}                     :
+OverdensePar      : {}                     :
+CatFun            : catsHTM                :
+OmitNoPM          : 0                      : bool
+Shape             : box                    :
+SizeUnits         : deg                    :
+%EpochOut          :  : JD
+EpochUnits        : JD                     :
+RefCooUnits       : deg                    :
+CatRemoveNaN      : 1                      : bool
+CatRemoveBadColRow: 1                      : bool
+CatRemoveOverDense: 1                      : bool
+EqualizeDensity   : 1                      : bool
+DiluteThreshold   : 0.5                    : 

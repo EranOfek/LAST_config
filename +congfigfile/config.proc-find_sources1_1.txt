@@ -1,0 +1,13 @@
+%--- find_sources parameters ---
+Threshold         : 5                      :
+Psf               : []                     :
+PsfFun            : @imUtil.kernel2.gauss  : 
+PsfFunPar         : {[0.1;1.5;3]}          :
+RemoveEdgeDist    : 0                      :
+ForcedList        : []                     :
+OnlyForced        : 0                      : bool
+BackPar           : {}                     : 
+MomPar            : {}                     :
+OutType           : catCl                  :
+ColCell           : {'XPEAK','YPEAK','TEMP_ID','SN','FLUX_CONV','BACK_IM','VAR_IM','X', 'Y','X2','Y2','XY','FLUX_APER', 'APER_AREA', 'FLUX_BOX','BACK_ANNULUS', 'STD_ANNULUS', 'FLUX_WAPER'}  :
+Conn              : 8                      :

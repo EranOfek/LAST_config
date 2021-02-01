@@ -1,0 +1,5 @@
+%--- isdark parameters ---
+% between predicted variance and measured variance
+NoiseThreshold          : 5             :
+DarkTemplate            :               : 
+DarkVarTemplate         :               :
