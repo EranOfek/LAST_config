@@ -1,4 +1,4 @@
-function [Data,Unit]=read_config(ConfigFileNames,Format)
+function [Data,Unit]=read_config(ConfigFileName,Format)
 % Return configuration parameters for LAST node, mount, telescope
 % Package: +configfile
 % Input  : - A configuration file name to read.
@@ -13,11 +13,11 @@ if nargin<2
 end
 
 Path = configfile.pathname;
-ConfigFileNames = sprintf('%s%s%s',Path,filesep,ConfigFileNames);
+ConfigFileName = sprintf('%s%s%s',Path,filesep,ConfigFileName);
 
 switch lower(Format)
     case 'txt'
-        FID = fopen(ConfigFileNames,'r');
+        FID = fopen(ConfigFileName,'r');
         LineInd = 0;
 
         while ~feof(FID)
