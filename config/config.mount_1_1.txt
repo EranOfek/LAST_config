@@ -1,11 +1,17 @@
-NodeNumber     : 1             : 
-MountNumber    : 1             :
-MountType      : Xerxes        :
-MountSerialNum :               : 
-Long           : 35.02         : deg
-Lat            : 30.04         : deg
-Height         : 400           : m
-AzAltLimi      : [[0, 0];[90, 10];[180, 15];[270, 10];[360, 0]]  : deg
-AltLimit       : 15            : deg
-HALimit        : 120           : deg
-
+NodeNumber      : 1             : 
+MountNumber     : 1             :
+MountType       : Xerxes        :
+MountSerialNum  :               : 
+Long            : 35.02         : deg
+Lat             : 30.04         : deg
+Height          : 400           : m
+AzAltLimi       : [[0, 0];[90, 10];[180, 15];[270, 10];[360, 0]]  : deg
+AltLimit        : 15            : deg
+HALimit         : 120           : deg
+% offset sign indicate if the offset is add or subtracted from current tick position - i.e., this is the encoder direction
+RA_offset_sign  : 1             :
+Dec_offset_sign : -1            :
+% offset [NewCoo - MountCoo]
+%  HA/Dec 11371178  9005635
+HAZeroPositionTicks : 1.104258e+07 : ticks
+DecZeroPositionTicks : 9.087461e+06 : ticks

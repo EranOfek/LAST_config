@@ -5,7 +5,7 @@ function replace_config(FileName,Key,Val,Units)
 %          - Value.
 %          - Units. Default is ''.
 %
-% Example: configfile.write_config('try.txt','Long','31.0','');
+% Example: configfile.replace_config('try.txt','Long','31.0','');
 
 if nargin<4
     Units = '';
