@@ -1,17 +1,35 @@
+% Configuration file for mount / Logical
+% physical ID
 NodeNumber      : 1             : 
 MountNumber     : 1             :
-MountType       : Xerxes        :
-MountSerialNum  :               : 
-Long            : 35.02         : deg
-Lat             : 30.04         : deg
-Height          : 400           : m
-AzAltLimi       : [[0, 0];[90, 10];[180, 15];[270, 10];[360, 0]]  : deg
-AltLimit        : 15            : deg
+MountName       : RAD21drive-932187746_DecD21Dual-13182557  :
+%--- Communication ---
+% Physical port
+% /dev/ttyUSB0
+PhysicalPort : pci-0000:45:00.1-usb-0:4.4:1.0  :   
+% IP/Port of the computer on which the mount object exist
+MountMsgHost    :   :
+MountMsgPort    :   :
+% geodetic position
+ObsLon          : 34.81694         : deg
+ObsLat          : 31.91111         : deg
+ObsHeight       : 40           : m
+% Pointing limits
+AzAltLimit      : [[0, 0];[90, 10];[180, 15];[270, 10];[360, 0]]  : deg
+MinAlt          : 15            : deg
 HALimit         : 120           : deg
 % offset sign indicate if the offset is add or subtracted from current tick position - i.e., this is the encoder direction
-RA_offset_sign  : 1             :
-Dec_offset_sign : -1            :
 % offset [NewCoo - MountCoo]
 %  HA/Dec 11371178  9005635
-HAZeroPositionTicks : 1.104258e+07 : ticks
-DecZeroPositionTicks : 9.087461e+06 : ticks
+HAZeroPositionTicks : 1.101792e+07 : ticks
+DecZeroPositionTicks : 9.047225e+06 : ticks
+%
+% IP/Port of the computer on which the mount object exist
+MountMsgHost    : localhost :
+% Port structure XYYZ
+% where X -- is type : Mounts 3, Camera 4, Focusers 5, Sensors 6, Manager 7
+%       YY -- is computer number 0..48
+%       Z  -- camera/focuser number 1..4
+MountMsgPort    : 3011      :
+% LogFile
+LogFileDir      : /media/last/data2/log : 
