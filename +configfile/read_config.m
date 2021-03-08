@@ -30,7 +30,7 @@ switch lower(Format)
                     % comment/empty - ignore
                 else
 
-                    LineData  = regexp(Line,':','split');
+                    LineData  = regexp(Line,' :','split');
 
                     % remove blanks
                     LineData{1} = Util.string.spacedel(LineData{1});

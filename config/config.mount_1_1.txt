@@ -1,15 +1,12 @@
 % Configuration file for mount / Logical
 % physical ID
 NodeNumber      : 1             : 
-MountNumber     : 1             :
+MountNumber     : 1             : 
 MountName       : RAD21drive-932187746_DecD21Dual-13182557  :
+PhysicalPort    : pci-0000:03:00.3-usb-0:2:1.0 : 
 %--- Communication ---
 % Physical port
 % /dev/ttyUSB0
-PhysicalPort : pci-0000:45:00.1-usb-0:4.4:1.0  :   
-% IP/Port of the computer on which the mount object exist
-MountMsgHost    :   :
-MountMsgPort    :   :
 % geodetic position
 ObsLon          : 34.81694         : deg
 ObsLat          : 31.91111         : deg
@@ -25,11 +22,12 @@ HAZeroPositionTicks : 1.101792e+07 : ticks
 DecZeroPositionTicks : 9.047225e+06 : ticks
 %
 % IP/Port of the computer on which the mount object exist
-MountMsgHost    : localhost :
+MountHostIP    : localhost :
+
 % Port structure XYYZ
 % where X -- is type : Mounts 3, Camera 4, Focusers 5, Sensors 6, Manager 7
 %       YY -- is computer number 0..48
 %       Z  -- camera/focuser number 1..4
-MountMsgPort    : 3011      :
+%MountHostPort    : 3011      :
 % LogFile
 LogFileDir      : /media/last/data2/log : 

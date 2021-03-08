@@ -1,5 +1,5 @@
 % Configuration file for QHY camera
-CameraName        : QHY600M-14b54b419653bc47e   :
+CameraName        : QHY600M-9fc3db42b6306d371   : 
 CameraModel       : QHY600M-PH                  :
 CameraType        : QHY                         :
 %

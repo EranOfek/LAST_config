@@ -1,8 +1,11 @@
+ProjectName      : LAST          : 
 NodeNumber       : 1             : 
 MountNumber      : 1             :
 CameraNumber     : 3             :
 CameraPos        : SW            : 
-CameraName          : QHY600M-14b54b419653bc47e :
+CameraName       : QHY600M-14b54b419653bc47e :
+MountCameraDist  : 0 :
+MountCameraPA    : 0 :
 %
 BaseDir          : /data/euler   :
 % relative to BaseDir
@@ -17,10 +20,12 @@ Filter           : clear         :
 CameraMode       : highRN        :
 % Communication
 PhysicalPort     : pci-0000:45:00.1-usb-0:2:1.0 :
+%
 % IP/Port of the computer on which the camera object exist
-MountMsgHost    : localhost :
+%
+CameraHostIP    : 127.0.0.1 :
 % Port structure XYYZ
 % where X -- is type : Mounts 3, Camera 4, Focusers 5, Sensors 6, Manager 7
 %       YY -- is computer number 0..48
 %       Z  -- camera/focuser number 1..4
-MountMsgPort    : 4011      : 
+%MountMsgPort    : 4011      : 

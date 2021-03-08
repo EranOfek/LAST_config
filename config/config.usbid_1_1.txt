@@ -1,0 +1,16 @@
+% USB identifiers for node 1, computer 1
+% device    PCI address                       sticker,type
+Mouse    : pci-0000:45:00.1-usb-0:4.2:1.0   : A,USB2
+keyboard : pci-0000:45:00.1-usb-0:4.1:1.0   : B,USB2
+Mount    : pci-0000:03:00.3-usb-0:2:1.0     : I,USB3
+Camera1  : pci-0000:23:00.3-usb-0:2:1.0     : (NE)G,USB3
+Camera2  :                                  :
+Camera3  : pci-0000:45:00.1-usb-0:1:1.0     : (SW)E,USB3
+Camera4  :                                  :
+Focuser1 : pci-0000:45:00.1-usb-0:4.4:1.0   : C,USB2
+Focuser2 : pci-0000:45:00.1-usb-0:4.3:1.0   : D,USB2
+Focuser3 : pci-0000:45:00.1-usb-0:2:1.0     : F,USB2
+Focuser4 :                                  :
+NotUsed1 : pci-0000:03:00.3-usb-0:1:1.0     : H,USB3
+
+
