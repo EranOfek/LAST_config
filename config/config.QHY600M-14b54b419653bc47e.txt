@@ -1,18 +1,18 @@
 % Configuration file for QHY camera
-CameraName        : QHY600M-14b54b419653bc47e   :
-CameraModel       : QHY600M-PH                  :
+CameraName        : QHY600M-14b54b419653bc47e   : 
+CameraModel       : QHY600M-PH                  : 
 CameraType        : QHY                         :
 %
 ImageSizeXY       : [6387 9576]                 :
-CCDSEC            : [1 6387 1 9576]                          :
+CCDSEC            : [1 6387 1 9576]             :
 % CameraMode: highRN | lowRN
-RN_highRN        : 3.5           :
-RN_lowRN         : 1.5           :
-Gain_highRN      : 0.77          :
-Gain_lowRN       : 0.77          :
-DC_highRN        : 0.01          :
-DC_lowRN         : 0.01          :
-DefaultSaturation: 60000         :
+RN_highRN         : 3.5           :
+RN_lowRN          : 1.5           :
+Gain_highRN       : 0.77          :
+Gain_lowRN        : 0.77          :
+DC_highRN         : 0.01          :
+DC_lowRN          : 0.01          :
+DefaultSaturation : 60000         :
 %
 %
 GAIN      :       : [e-/ADU]

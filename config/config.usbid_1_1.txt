@@ -10,7 +10,7 @@ Camera4  :                                  :
 Focuser1 : pci-0000:45:00.1-usb-0:4.4:1.0   : C,USB2
 Focuser2 : pci-0000:45:00.1-usb-0:4.3:1.0   : D,USB2
 Focuser3 : pci-0000:45:00.1-usb-0:2:1.0     : F,USB2
-Focuser4 :                                  :
-NotUsed1 : pci-0000:03:00.3-usb-0:1:1.0     : H,USB3
+Focuser4 : pci-0000:03:00.3-usb-0:1:1.0     : H,USB3
+%NotUsed1 : pci-0000:03:00.3-usb-0:1:1.0     : H,USB3
 
 

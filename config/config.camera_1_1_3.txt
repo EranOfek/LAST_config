@@ -6,6 +6,7 @@ CameraPos        : SW            :
 CameraName       : QHY600M-14b54b419653bc47e :
 MountCameraDist  : 0 :
 MountCameraPA    : 0 :
+PhysicalPort     : pci-0000:45:00.1-usb-0:2:1.0 :
 %
 BaseDir          : /data/euler   :
 % relative to BaseDir
@@ -19,7 +20,6 @@ Filter           : clear         :
 % CameraMode: highRN | lowRN
 CameraMode       : highRN        :
 % Communication
-PhysicalPort     : pci-0000:45:00.1-usb-0:2:1.0 :
 %
 % IP/Port of the computer on which the camera object exist
 %
@@ -29,3 +29,4 @@ CameraHostIP    : 127.0.0.1 :
 %       YY -- is computer number 0..48
 %       Z  -- camera/focuser number 1..4
 %MountMsgPort    : 4011      : 
+LogFileDir  : /home/last/ :
