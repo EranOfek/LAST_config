@@ -1,0 +1,23 @@
+% USB identifiers for node 1, computer 1
+% use: [IDpaths,ports]=serialDevPath to id PCI names
+% device    PCI address                       sticker,type
+Camera1  : pci-0000:48:00.0-usb-0:1:1.0     : A, USB3 (blue / upper row / 1 (from left)
+	 : pci-0000:48:00.0-usb-0:2:1.0     : B, 
+	 : pci-0000:48:00.0-usb-0:3:1.0     : C,
+	 : pci-0000:48:00.0-usb-0:4:1.0     : D,
+Camera2	 : pci-0000:49:00.0-usb-0:1:1.0     : E, USB3 (blue / 2nd raw / 1 (from left)
+	 : pci-0000:49:00.0-usb-0:2:1.0     : F,
+	 : pci-0000:49:00.0-usb-0:3:1.0     : G,
+	 : pci-0000:49:00.0-usb-0:4:1.0     : H,
+Camera3	 : pci-0000:03:00.3-usb-0:2:1.0     : I, USB3.1 (red / upper left)
+	 : pci-0000:03:00.3-usb-0:1:1.0     : J,
+	 : pci-0000:23:00.3-usb-0:2:1.0     : K, USB 3.1 (red, 2nd raw)
+Camera4	 : pci-0000:45:00.1-usb-0:2:1.0     : L, USB 3.1 (red, 3rd raw, left)
+	 : pci-0000:45:00.1-usb-0:1:1.0     : M,
+	 : pci-0000:45:00.1-usb-0:4.3:1.0   : N, USB 2 (black, 4th raw, left)
+         : pci-0000:45:00.1-usb-0:4.4:1.0   : O, 
+	 : pci-0000:45:00.1-usb-0:4.1:1.0   : P,
+Mouse    : pci-0000:45:00.1-usb-0:4.2:1.0   : Q,
+	 : pci-0000:45:00.3-usb-0:6.4:1.0   : R, USB 2 (white, front, left)
+	 : pci-0000:45:00.3-usb-0:6.1:1.0   : S, USB 2 (white, front, right)
+

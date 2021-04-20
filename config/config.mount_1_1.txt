@@ -30,4 +30,4 @@ MountHostIP    : localhost :
 %       Z  -- camera/focuser number 1..4
 %MountHostPort    : 3011      :
 % LogFile
-LogFileDir      : /media/last/data2/log : 
+LogFileDir      : /last01/data1/archive/LAST/log : 
