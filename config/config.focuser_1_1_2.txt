@@ -1,6 +1,6 @@
 FocuserName   :              : 
 FocuserType   : Celestron    :
 FocuserModel  : Celestron    :
-PhysicalPort  : pci-0000:45:00.1-usb-0:4.3:1.0 : 
+PhysicalPort  : pci-0000:49:00.0-usb-0:2:1.0 : 
 LogFileDir    : /last01/data2/archive/LAST/log :
 

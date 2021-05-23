@@ -3,7 +3,7 @@ NodeNumber       : 1             :
 MountNumber      : 1             :
 CameraNumber     : 1             :
 CameraPos        : NE            : 
-CameraName       : QHY600M-f66f2d469925fea7b : 
+CameraName       : QHY600M-9591234bb4884c26c : 
 MountCameraDist  : 0 :
 MountCameraPA    : 0 :
 PhysicalPort     : pci-0000:48:00.0-usb-0:1:1.0 :

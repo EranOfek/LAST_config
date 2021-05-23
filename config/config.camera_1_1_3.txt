@@ -8,13 +8,13 @@ MountCameraDist  : 0 :
 MountCameraPA    : 0 :
 PhysicalPort     : pci-0000:03:00.3-usb-0:2:1.0 : 
 %
-BaseDir          : /last02/data1   :
+BaseDir          : /last01/data2   :
 % relative to BaseDir
 DataDir          : archive/LAST  : 
-LogFileDir       : /last02/data1/archive/LAST/log/ :
+LogFileDir       : /last01/data2/archive/LAST/log/ :
 % relative to BaseDir
-DarkDBDir        : /last02/data/ServiceImages/darkDB : 
-FlatDBDir        : /last02/data/ServiceImages/flatDB : 
+DarkDBDir        : /last01/data/ServiceImages/darkDB : 
+FlatDBDir        : /last01/data/ServiceImages/flatDB : 
 DarkDB           : darkDB.mat    :
 FlatDB           : flatDB.mat    :
 Filter           : clear         :
