@@ -26,14 +26,14 @@ switch lower(Format)
 
             Line      = fgetl(FID);
             if ~isempty(Line)
-                if strcmp(Line(1),'#') || strcmp(Line(1),'%') || isempty(Util.string.spacedel(Line))
+                if strcmp(Line(1),'#') || strcmp(Line(1),'%') || isempty(tools.string.spacedel(Line))
                     % comment/empty - ignore
                 else
 
                     LineData  = regexp(Line,' :','split');
 
                     % remove blanks
-                    LineData{1} = Util.string.spacedel(LineData{1});
+                    LineData{1} = tools.string.spacedel(LineData{1});
                     LineData{2} = strtrim(LineData{2});
                     LineData{3} = strtrim(LineData{3});
 
