@@ -4,8 +4,8 @@ MountNumber      : [1]
 CameraNumber     : [1]
 CameraPos        : ['NE']
 CameraName       : ['QHY600M-9591234bb4884c26c']
-MountCameraDist  : [0]
-MountCameraPA    : [0]
+MountCameraDist  : [0]    # distance from nominal pointing
+MountCameraPA    : [0]    # position angle
 PhysicalPort     : ['pci-0000:48:00.0-usb-0:1:1.0']
 
 BaseDir          : ['/last01/data1']
@@ -17,8 +17,7 @@ DarkDBDir        : ['/last01/data/ServiceImages/darkDB']
 FlatDBDir        : ['/last01/data/ServiceImages/flatDB'] 
 DarkDB           : ['darkDB.mat']
 FlatDB           : ['flatDB.mat']
-Filter           : ['clear']
 
-CameraMode       : ['highRN']
+Filter           : ['clear']
 
 CameraHostIP    : ['127.0.0.1']

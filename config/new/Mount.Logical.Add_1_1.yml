@@ -7,11 +7,11 @@ ObsLon          : [34.81694]
 ObsLat          : [31.91111]
 ObsHeight       : [40]
 
-AzAltLimit      : [[0, 0,     90, 10,     180, 15,   270, 10,    360, 0]
+# [Az,Alt] limit - nodes points of the interpolation for the limit mask
+# Mandatory: first point Az=0, last point Az=360
+AzAltLimit      : [[0, 0],  [90, 10], [180, 15], [270, 10],  [360, 0]]
 MinAlt          : [15]
 HALimit         : [120]
-HAZeroPositionTicks : [1.101792e+07]
-DecZeroPositionTicks : [9.047225e+06]
 
 MountHostIP    : ['localhost']
 
