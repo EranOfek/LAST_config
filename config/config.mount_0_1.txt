@@ -1,0 +1,35 @@
+% Configuration file for mount / Logical
+% simulated pier #0
+% physical ID
+NodeNumber      : 0             : 
+MountNumber     : 1             : 
+MountType       : XerxesSimulated :
+MountName       : simulated-mount  :
+PhysicalPort    : pci-0000:03:00.3-usb-0:2:1.0 : 
+%--- Communication ---
+% Physical port
+% /dev/ttyUSB0
+% geodetic position
+ObsLon          : 34.81694         : deg
+ObsLat          : 31.91111         : deg
+ObsHeight       : 40           : m
+% Pointing limits
+AzAltLimit      : [[0, 0];[90, 10];[180, 15];[270, 10];[360, 0]]  : deg
+MinAlt          : 15            : deg
+HALimit         : 120           : deg
+% offset sign indicate if the offset is add or subtracted from current tick position - i.e., this is the encoder direction
+% offset [NewCoo - MountCoo]
+%  HA/Dec 11371178  9005635
+HAZeroPositionTicks : 1.101792e+07 : ticks
+DecZeroPositionTicks : 9.047225e+06 : ticks
+%
+% IP/Port of the computer on which the mount object exist
+MountHostIP    : localhost :
+
+% Port structure XYYZ
+% where X -- is type : Mounts 3, Camera 4, Focusers 5, Sensors 6, Manager 7
+%       YY -- is computer number 0..48
+%       Z  -- camera/focuser number 1..4
+%MountHostPort    : 3011      :
+% LogFile
+LogFileDir      : /last01/data1/archive/LAST/log : 

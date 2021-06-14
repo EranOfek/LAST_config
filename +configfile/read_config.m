@@ -17,55 +17,58 @@ ConfigFileName = sprintf('%s%s%s',Path,filesep,ConfigFileName);
 
 switch lower(Format)
     case 'txt'
-        FID = fopen(ConfigFileName,'r');
-        LineInd = 0;
-
-        while ~feof(FID)
-            %LineInd = LineInd + 1;
-            %LineInd
-
-            Line      = fgetl(FID);
-            if ~isempty(Line)
-                if strcmp(Line(1),'#') || strcmp(Line(1),'%') || isempty(tools.string.spacedel(Line))
-                    % comment/empty - ignore
-                else
-
-                    LineData  = regexp(Line,' :','split');
-
-                    % remove blanks
-                    LineData{1} = tools.string.spacedel(LineData{1});
-                    LineData{2} = strtrim(LineData{2});
-                    LineData{3} = strtrim(LineData{3});
-
-                    Val = str2double(LineData{2});
-                    if isnan(Val)
-                        if numel(LineData{2})>0
-                            if strcmp(LineData{2}(1),'[') || strcmp(LineData{2}(1),'{') || strcmp(LineData{2}(1),'@')
-                                % a matrix or vector
-                                try
-                                    Val = eval(LineData{2});
-                                catch
-                                    Val = LineData{2};
+        try
+            FID = fopen(ConfigFileName,'r');
+            LineInd = 0;
+            
+            while ~feof(FID)
+                %LineInd = LineInd + 1;
+                %LineInd
+                
+                Line      = fgetl(FID);
+                if ~isempty(Line)
+                    if strcmp(Line(1),'#') || strcmp(Line(1),'%') || isempty(tools.string.spacedel(Line))
+                        % comment/empty - ignore
+                    else
+                        
+                        LineData  = regexp(Line,' :','split');
+                        
+                        % remove blanks
+                        LineData{1} = tools.string.spacedel(LineData{1});
+                        LineData{2} = strtrim(LineData{2});
+                        LineData{3} = strtrim(LineData{3});
+                        
+                        Val = str2double(LineData{2});
+                        if isnan(Val)
+                            if numel(LineData{2})>0
+                                if strcmp(LineData{2}(1),'[') || strcmp(LineData{2}(1),'{') || strcmp(LineData{2}(1),'@')
+                                    % a matrix or vector
+                                    try
+                                        Val = eval(LineData{2});
+                                    catch
+                                        Val = LineData{2};
+                                    end
+                                    Data.(LineData{1}) = Val;
+                                    
+                                else
+                                    % save as string
+                                    Data.(LineData{1}) = LineData{2};
                                 end
-                                Data.(LineData{1}) = Val;
-
                             else
                                 % save as string
                                 Data.(LineData{1}) = LineData{2};
                             end
                         else
-                            % save as string
-                            Data.(LineData{1}) = LineData{2};
+                            % save as number
+                            Data.(LineData{1}) = Val;
                         end
-                    else
-                        % save as number
-                        Data.(LineData{1}) = Val;
+                        Unit.(LineData{1}) = LineData{3};
                     end
-                    Unit.(LineData{1}) = LineData{3};
                 end
             end
+        catch
+            error('configuration file %s not found!',ConfigFileName)
         end
-
     otherwise
         error('Unsupported file format option');
 end
