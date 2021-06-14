@@ -1,0 +1,11 @@
+
+MountType       : ['Xerxes']
+MountModel      : ['Xerxes-20']
+MountName       : ['RAD21drive-932187746_DecD21Dual-13182557']
+
+RA_encoder_direction  : [1]
+Dec_encoder_direction : [-1]
+
+DefaultHAZeroPositionTicks  : [11371178] 
+DefaultDecZeroPositionTicks : [9005635]
+
