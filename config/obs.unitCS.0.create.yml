@@ -1,0 +1,6 @@
+Pippo   : {inst.QHYccd} # this makes Data.Pippo.inst0x2EQHYccd = []
+Pertica : [inst.QHYccd] # this makes Data.Pertica = {'inst.QHYccd'}
+Papalla : 'inst.QHYccd' # this makes Data.Papalla = 'inst.QHYccd'
+Zagar   : inst.QHYccd   # this makes Data.Zagar = 'inst.QHYccd' too
+
+CameraHandle : inst.QHYccd
