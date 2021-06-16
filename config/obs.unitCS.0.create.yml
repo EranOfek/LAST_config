@@ -1,5 +1,7 @@
 ProjName           : 'LAST'
-NodeNumber         : 1 
+NodeNumber         : 0 
 TimeZone           : 2   # hours
 
-
+# how much hardware connected
+NumberLocalTelescopes   :  2
+NumberRemoteTelescopes  :  0

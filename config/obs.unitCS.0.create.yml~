@@ -1,4 +1,0 @@
-Pippo   : {inst.QHYccd} # this makes a struct with field Data.Pippo.inst0x2EQHYccd
-Pertica : [inst.QHYccd] # 
-Papalla : 'inst.QHYccd' 
-Zagor   : inst.QHYccd
