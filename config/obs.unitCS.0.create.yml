@@ -1,6 +1,18 @@
-Pippo   : {inst.QHYccd} # this makes Data.Pippo.inst0x2EQHYccd = []
-Pertica : [inst.QHYccd] # this makes Data.Pertica = {'inst.QHYccd'}
-Papalla : 'inst.QHYccd' # this makes Data.Papalla = 'inst.QHYccd'
-Zagar   : inst.QHYccd   # this makes Data.Zagar = 'inst.QHYccd' too
+NodeNumber      : [0]
+MountNumber     : [1]
+MountName       : ['RAD21drive-932187746_DecD21Dual-13182557']
+PhysicalPort    : ['pci-0000:03:00.3-usb-0:2:1.0']
 
-CameraHandle : inst.QHYccd
+ObsLon          : [34.81694]
+ObsLat          : [31.91111]
+ObsHeight       : [40]
+
+# [Az,Alt] limit - nodes points of the interpolation for the limit mask
+# Mandatory: first point Az=0, last point Az=360
+AzAltLimit      : [[0, 0],  [90, 10], [180, 15], [270, 10],  [360, 0]]
+MinAlt          : [15]
+HALimit         : [120]
+
+MountHostIP    : ['localhost']
+
+LogFileDir      : ['/last01/data1/archive/LAST/log']
