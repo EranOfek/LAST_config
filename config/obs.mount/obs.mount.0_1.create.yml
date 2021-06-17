@@ -3,6 +3,8 @@ MountClass      : inst.XerxesSimulated
 MountName       : 'RAD21drive-932187746_DecD21Dual-13182557'
 PhysicalPort    : 'pci-0000:03:00.3-usb-0:2:1.0'
 
+# NOTE: also the driver needs geographical coordinates for celestial computations
+#       the abstractor writes them to the driver upon create
 ObsLon          : 34.81694
 ObsLat          : 31.91111
 ObsHeight       : 40
