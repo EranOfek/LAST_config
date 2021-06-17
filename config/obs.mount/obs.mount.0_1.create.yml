@@ -1,5 +1,5 @@
-NodeNumber      : 1
 MountNumber     : 1
+MountClass      : inst.XerxesSimulated
 MountName       : 'RAD21drive-932187746_DecD21Dual-13182557'
 PhysicalPort    : 'pci-0000:03:00.3-usb-0:2:1.0'
 
