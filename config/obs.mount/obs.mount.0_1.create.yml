@@ -9,7 +9,7 @@ ObsHeight       : 40
 
 # [Az,Alt] limit - nodes points of the interpolation for the limit mask
 # Mandatory: first point Az=0, last point Az=360
-#AzAltLimit      : [[0, 0],  [90, 10], [180, 15], [270, 10],  [360, 0]]
+AzAltLimit      : [[0, 15], [90, 15], [180, 15], [270, 15], [360, 15]]
 MinAlt          : 15
 HALimit         : 120
 
