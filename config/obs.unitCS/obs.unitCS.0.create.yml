@@ -6,5 +6,11 @@ TimeZone           : 2   # hours
 NumberLocalTelescopes   :  2
 NumberRemoteTelescopes  :  0
 
+# mount driver (for now 1)
+MountDriver : inst.XerxesSimulated
+
+# camera drivers (as many as NumberLocalTelescopes)
+CameraDriver : [inst.QHYccd, inst.QHYccd]
+
 # focuser drivers (as many as NumberLocalTelescopes)
 FocuserDriver : [inst.CelestronFocuser, inst.CelestronFocuser]
