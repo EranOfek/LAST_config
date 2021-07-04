@@ -1,5 +1,3 @@
-MountModel      : ['Xerxes-20']
-
 RA_encoder_direction  : [1]
 Dec_encoder_direction : [-1]
 
