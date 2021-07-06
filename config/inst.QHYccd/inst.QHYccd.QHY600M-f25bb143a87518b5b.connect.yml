@@ -22,10 +22,10 @@ DARKCUR   : 0.01
 
 # camera setting parameters
 ReadMode  : 1
-CamOffset : 3
-CamGain   : 0       # camera gain setting value
-Binning   : 1 # problematic [1 1] -> {[1],[1]}
+Offset : 3
+Gain   : 0       # camera gain setting value
+Binning: [1, 1]
 
 
 HISTORY : ['']
-COMMEMT : ['']
+COMMENT : ['']
