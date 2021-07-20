@@ -3,8 +3,8 @@ NodeNumber         : 0
 TimeZone           : 2   # hours
 
 # how much hardware connected
-NumberLocalTelescopes   :  2
-NumberRemoteTelescopes  :  0
+LocalTelescopes   :  [1]
+RemoteTelescopes  :  [[3], [4]]  # use syntax [[indices for first slave], [indices for second], ...]
 
 # mount driver (for now 1)
 MountDriver : inst.XerxesSimulated
