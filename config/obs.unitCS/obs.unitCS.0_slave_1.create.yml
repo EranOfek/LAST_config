@@ -1,0 +1,20 @@
+ProjName           : 'LAST'
+NodeNumber         : 0 
+TimeZone           : 2   # hours
+
+# how much hardware connected
+LocalTelescopes   :  [1]
+
+# write the following as string, which will be eval()'d in matlab
+RemoteTelescopes  :  '{}' # syntax: {[indices for first slave], [indices for second], ...}
+
+Id : '0'    # rewrite the Id
+
+# mount driver (for now 1)
+MountDriver : inst.XerxesSimulated
+
+# camera drivers (as many as LocalTelescopes)
+CameraDriver : ['inst.QHYccd']
+
+# focuser drivers (as many as LocalTelescopes)
+FocuserDriver : ['inst.CelestronFocuser']
