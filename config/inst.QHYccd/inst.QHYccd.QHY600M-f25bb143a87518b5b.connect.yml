@@ -1,4 +1,4 @@
-CameraModel       : 'QHY600M-PH'
+#CameraModel       : 'QHY600M-PH'
 CameraType        : 'QHY'
 
 ImageSizeXY       : [6387, 9576]
