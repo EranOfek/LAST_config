@@ -1,2 +1,4 @@
 #
 PromptMirrorLock : false
+
+PhysicalAddress : pci-0000:00:1a.0-usb-0:1.4:1.0
