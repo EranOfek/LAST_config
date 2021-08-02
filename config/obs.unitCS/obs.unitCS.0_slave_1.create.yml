@@ -3,10 +3,10 @@ NodeNumber         : 0
 TimeZone           : 2   # hours
 
 # how much hardware connected
-LocalTelescopes   :  [1]
+LocalTelescopes   :  [2]
 
 # write the following as string, which will be eval()'d in matlab
-RemoteTelescopes  :  '{}' # syntax: {[indices for first slave], [indices for second], ...}
+RemoteTelescopes  :  '{1}' # syntax: {[indices for first slave], [indices for second], ...}
 
 Id : '0'    # rewrite the Id
 
