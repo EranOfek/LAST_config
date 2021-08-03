@@ -3,10 +3,12 @@ NodeNumber         : 0
 TimeZone           : 2   # hours
 
 # how much hardware connected
-LocalTelescopes   :  [1,2]
+LocalTelescopes   :  [2]
 
 # write the following as string, which will be eval()'d in matlab
-RemoteTelescopes  :  '{[3,4]}' # syntax: {[indices for first slave], [indices for second], ...}
+RemoteTelescopes  :  '{}' # syntax: {[indices for first slave], [indices for second], ...}
+# slave units need RemoteTelescopes={}, otherwise their initialization tries
+#  to open further slaves (failing because of nested callbacks)
 
 Id : '0'    # rewrite the Id
 
@@ -14,7 +16,7 @@ Id : '0'    # rewrite the Id
 MountDriver : inst.XerxesSimulated
 
 # camera drivers (as many as LocalTelescopes)
-CameraDriver : [inst.QHYccd, inst.QHYccd]
+CameraDriver : ['inst.QHYccd']
 
 # focuser drivers (as many as LocalTelescopes)
-FocuserDriver : [inst.CelestronFocuser, inst.CelestronFocuser]
+FocuserDriver : ['inst.CelestronFocuser']
