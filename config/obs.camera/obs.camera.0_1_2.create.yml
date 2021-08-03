@@ -14,3 +14,5 @@ DarkDB           : 'darkDB.mat'
 FlatDB           : 'flatDB.mat'
 
 Filter           : 'clear'
+
+CameraNumber     : 2
