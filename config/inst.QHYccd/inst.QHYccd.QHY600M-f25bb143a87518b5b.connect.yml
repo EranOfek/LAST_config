@@ -25,6 +25,7 @@ ReadMode  : 1
 Offset : 3
 Gain   : 0       # camera gain setting value
 Binning: [1, 1]
+Temperature : -5
 
 
 HISTORY : ['']
