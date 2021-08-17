@@ -3,3 +3,16 @@
 #  later at connection time.
 PhysicalId  : QHY600M-f25bb143a87518b5b
 Verbose     : true
+
+BaseDir          : '/tmp/last04/data1'
+DataDir          : 'archive/LAST' 
+LogFileDir       : '/tmp/last04/data1/archive/LAST/log/'
+
+DarkDBDir        : '/tmp/last04/data/ServiceImages/darkDB'
+FlatDBDir        : '/tmp/last04/data/ServiceImages/flatDB' 
+DarkDB           : 'darkDB.mat'
+FlatDB           : 'flatDB.mat'
+
+Filter           : 'clear'
+
+CameraNumber     : 3

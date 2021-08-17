@@ -1,3 +1,5 @@
 *.m~
 *.txt~
 *.yml~
+*.asv
+*.swp
