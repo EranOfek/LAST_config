@@ -10,6 +10,4 @@ AzAltLimit      : [[0, 0],  [90, 10], [180, 15], [270, 10],  [360, 0]]
 MinAlt          : 15
 HALimit         : 120
 
-MountHostIP     : 'localhost'
-
 LogFileDir      : '/last01/data1/archive/LAST/log'

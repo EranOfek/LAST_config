@@ -16,3 +16,6 @@ FlatDB           : 'flatDB.mat'
 Filter           : 'clear'
 
 CameraNumber     : 1
+
+MountCameraDist  : 0    # distance from nominal pointing
+MountCameraPA    : 0    # position angle, degrees
