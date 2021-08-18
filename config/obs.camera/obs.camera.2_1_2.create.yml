@@ -4,7 +4,7 @@
 PhysicalId  : QHY600M-153434448f6f13787
 Verbose     : true
 
-BaseDir          : '/tmp/last01/data1'
+BaseDir          : '/tmp/last03/data1'
 DataDir          : 'archive/LAST'
 LogFileDir       : '/tmp/last03/data1/archive/LAST/log/'
 

@@ -6,7 +6,7 @@ Verbose     : true
 
 BaseDir          : '/tmp/last03/data1'
 DataDir          : 'archive/LAST' 
-LogFileDir       : '/tmp/last01/data1/archive/LAST/log/'
+LogFileDir       : '/tmp/last03/data1/archive/LAST/log/'
 
 DarkDBDir        : '/tmp/last03/data/ServiceImages/darkDB'
 FlatDBDir        : '/tmp/last03/data/ServiceImages/flatDB' 
