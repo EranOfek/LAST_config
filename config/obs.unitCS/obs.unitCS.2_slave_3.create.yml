@@ -1,7 +1,3 @@
-ProjName           : 'LAST'
-NodeNumber         : 2 
-TimeZone           : 2   # hours
-
 # how much hardware connected
 LocalTelescopes   :  [3]
 
