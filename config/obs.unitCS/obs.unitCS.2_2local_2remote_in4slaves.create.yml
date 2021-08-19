@@ -8,7 +8,7 @@ LocalTelescopes   :  []
 # write the following as string, which will be eval()'d in matlab
 RemoteTelescopes  :  '{1,2,3,4}' # syntax: {[indices for first slave], [indices for second], ...}
 
-Id : '2'    # rewrite the Id
+Id : '02'    # rewrite the Id
 
 # power switch driver
 PowerDriver : [inst.tinycontrolIPpowerSocket] # [] to force to cell
