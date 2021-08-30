@@ -10,4 +10,10 @@ AzAltLimit      : [[0, 0],  [90, 10], [180, 15], [270, 10],  [360, 0]]
 MinAlt          : 15
 HALimit         : 120
 
+DecZeroPositionTicks :     22722804 # reading of the Dec encoder at equatorial plane
+HAZeroPositionTicks  :      18627515 # reading of the HA encoder on the meridian
+DefaultDecZeroPositionTicks : 17056829 # reading of the Dec encoder at equatorial plane
+DefaultHAZeroPositionTicks  : 11371178 # reading of the HA encoder on the meridian
+
+
 LogFileDir      : '/last01/data1/archive/LAST/log'
