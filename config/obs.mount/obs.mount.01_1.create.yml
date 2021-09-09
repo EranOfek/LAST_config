@@ -1,0 +1,19 @@
+PhysicalPort    : 'pci-0000:48:00.0-usb-0:4:1.0'
+
+ObsLon          : 34.81694
+ObsLat          : 31.91111
+ObsHeight       : 40
+
+# [Az,Alt] limit - nodes points of the interpolation for the limit mask
+# Mandatory: first point Az=0, last point Az=360
+AzAltLimit      : [[0, 0],  [90, 10], [180, 15], [270, 10],  [360, 0]]
+MinAlt          : 15
+HALimit         : 120
+
+DecZeroPositionTicks :     22722804 # reading of the Dec encoder at equatorial plane
+HAZeroPositionTicks  :      18627515 # reading of the HA encoder on the meridian
+DefaultDecZeroPositionTicks : 17056829 # reading of the Dec encoder at equatorial plane
+DefaultHAZeroPositionTicks  : 11371178 # reading of the HA encoder on the meridian
+
+
+LogFileDir      : '/last01/data1/archive/LAST/log'
