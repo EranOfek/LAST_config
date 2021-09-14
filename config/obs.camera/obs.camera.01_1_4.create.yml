@@ -4,15 +4,15 @@
 PhysicalId  : QHY600M-14b54b419653bc47e
 Verbose     : true
 
-BaseDir          : '/tmp/last02/data1'
+BaseDir          : '/tmp/last01/data1'
 DataDir          : 'archive/LAST' 
-LogFileDir       : '/tmp/last02/data1/archive/LAST/log/'
+LogFileDir       : '/tmp/last01/data1/archive/LAST/log/'
 
-DarkDBDir        : '/tmp/last02/data/ServiceImages/darkDB'
-FlatDBDir        : '/tmp/last02/data/ServiceImages/flatDB' 
+DarkDBDir        : '/tmp/last01/data/ServiceImages/darkDB'
+FlatDBDir        : '/tmp/last01/data/ServiceImages/flatDB' 
 DarkDB           : 'darkDB.mat'
 FlatDB           : 'flatDB.mat'
 
 Filter           : 'clear'
 
-CameraNumber     : 4
+CameraNumber     : 4  # NW
