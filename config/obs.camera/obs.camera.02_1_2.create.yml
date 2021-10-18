@@ -16,3 +16,4 @@ FlatDB           : 'flatDB.mat'
 Filter           : 'clear'
 
 CameraNumber     : 2
+CameraPos        : 'SE'

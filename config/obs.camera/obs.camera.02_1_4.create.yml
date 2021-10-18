@@ -16,3 +16,4 @@ FlatDB           : 'flatDB.mat'
 Filter           : 'clear'
 
 CameraNumber     : 4
+CameraPos        : 'NW'
