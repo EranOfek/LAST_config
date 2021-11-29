@@ -1,0 +1,10 @@
+RA_encoder_direction  : 1
+Dec_encoder_direction : 1
+
+DefaultHAZeroPositionTicks  : 0
+DefaultDecZeroPositionTicks : 0
+
+HAZeroPositionTicks :  0
+DecZeroPositionTicks : 0
+
+Verbose :  1
