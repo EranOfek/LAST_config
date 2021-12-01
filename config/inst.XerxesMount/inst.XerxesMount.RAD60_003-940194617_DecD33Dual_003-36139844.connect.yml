@@ -1,5 +1,5 @@
-RA_encoder_direction  : 1
-Dec_encoder_direction : 1
+HAMotorDirection  : 1
+DecMotorDirection : 1
 
 DefaultHAZeroPositionTicks  : 0
 DefaultDecZeroPositionTicks : 0
