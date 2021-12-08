@@ -1,8 +1,7 @@
 HAMotorirection  : 1
 DecMotorDirection : -1
 
-DefaultHAZeroPositionTicks  : 11371178 
-DefaultDecZeroPositionTicks : 9005635
-
-HAZeroPositionTicks :  11017925
-DecZeroPositionTicks : 9047225
+DecZeroPositionTicks :     -9005635 # reading of the Dec encoder at equatorial plane
+HAZeroPositionTicks  :      11371178 # reading of the HA encoder on the meridian
+DefaultDecZeroPositionTicks : -9005635 # reading of the Dec encoder at equatorial plane
+DefaultHAZeroPositionTicks  : 11371178 # reading of the HA encoder on the meridian
