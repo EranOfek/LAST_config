@@ -16,8 +16,10 @@ PowerDriver : [inst.tinycontrolIPpowerSocket] # [] to force to cell
 CameraPowerUnit   : [1, 1, 1, 1]
 CameraPowerOutput : [1, 2, 3, 4]
 
-# mount driver (for now 1)
+# mount driver (for now, a single one)
 MountDriver : inst.XerxesSimulated
+MountPowerUnit   : 1
+MountPowerOutput : 5
 
 # camera drivers (as many as LocalTelescopes)
 CameraDriver : []

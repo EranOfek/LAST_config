@@ -16,8 +16,10 @@ PowerDriver : [inst.tinycontrolIPpowerSocket, inst.tinycontrolIPpowerSocket] # [
 CameraPowerUnit   : [2, 2, 1, 1]
 CameraPowerOutput : [1, 2, 1, 2]
 
-# mount driver (for now 1)
-MountDriver : inst.XerxesMount
+# mount driver (for now, a single one)
+MountDriver      : inst.XerxesMount
+MountPowerUnit   : 1
+MountPowerOutput : 3
 
 # camera drivers (as many as LocalTelescopes)
 CameraDriver : []
