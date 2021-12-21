@@ -16,3 +16,4 @@ FlatDB           : 'flatDB.mat'
 Filter           : 'clear'
 
 CameraNumber     : 4  # NW
+TelescopeOffset  : [0,0]
