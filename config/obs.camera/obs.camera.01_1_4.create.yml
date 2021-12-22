@@ -5,7 +5,7 @@ PhysicalId  : QHY600M-14b54b419653bc47e
 Verbose     : true
 
 BaseDir          : '/last01/data2'
-DataDir          : 'archive/LAST' 
+DataDir          : 'archive'
 LogFileDir       : '/tmp/last01/data1/archive/LAST/log/'
 
 DarkDBDir        : '/tmp/last01/data/ServiceImages/darkDB'
