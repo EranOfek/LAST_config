@@ -1,0 +1,22 @@
+# This is a template, please create a copy before changing anything
+#
+# differently than other devices, at connect time we look for a specific 
+# hardware Id. Hence PhysicalId is specified at object creation time and not
+# later at connection time.
+PhysicalId  : QHY600M-XXXXXXXXXXXXXXXXX 
+Verbose     : true
+
+BaseDir          : '/lastXX/dataX/archive' # The (existing) directory. Replace X
+DataDir          : 'XXX' # The (new) directory where the regular images will be stored. Replace X
+LogFileDir       : '/lastXX/dataX/archive/LAST/log/' # The directory wehere the log files will be stored. Replace X
+
+DarkDBDir        : '/last03/data/ServiceImages/darkDB' # The directory where "Dark" images will be stored. Replace X
+FlatDBDir        : '/last03/data/ServiceImages/flatDB' # The directory where "Flat" images will be stored. Replace X
+DarkDB           : 'darkDB.mat'
+FlatDB           : 'flatDB.mat'
+
+Filter           : 'clear'
+
+CameraNumber     : X 
+CameraPos        : 'XX'
+TelescopeOffset  : [X.X, X.X]

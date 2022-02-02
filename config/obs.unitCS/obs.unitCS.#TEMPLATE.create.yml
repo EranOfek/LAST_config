@@ -1,0 +1,29 @@
+# This is a template, please create a copy before changing anything
+ProjName           : 'LAST'
+NodeNumber         : 0 
+TimeZone           : 2   # hours
+
+# how much hardware connected
+LocalTelescopes   :  []
+
+# write the following as string, which will be eval()'d in matlab
+RemoteTelescopes  :  '{X,X}' # syntax: {[indices for first slave], [indices for second], ...}
+
+Id : '0'    # rewrite the Id
+
+# power switch driver
+PowerDriver : [inst.tinycontrolIPpowerSocket] # [] to force to cell
+
+# camera power output assigments 
+#  (sad, but yml configuration doesn't allow a more sophysticated structure)
+CameraPowerUnit   : [1, 1]
+CameraPowerOutput : [1, 2]
+
+# mount driver (for now 1)
+MountDriver : X  # for simulated or connected mount - inst.XerxesSimulated / XerxesMount
+
+# camera drivers (as many as LocalTelescopes)
+CameraDriver : [inst.QHYccd]
+
+# focuser drivers (as many as LocalTelescopes)
+FocuserDriver : [inst.CelestronFocuser]

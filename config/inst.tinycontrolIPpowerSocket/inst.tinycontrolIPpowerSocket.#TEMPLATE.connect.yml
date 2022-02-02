@@ -1,0 +1,2 @@
+# This is a template, please create a copy before changing anything
+Outputs : [1, 1, 1, 1, 1, 1]  # desired initial status of the outputs
