@@ -6,9 +6,9 @@
 PhysicalId  : QHY600M-XXXXXXXXXXXXXXXXX 
 Verbose     : true
 
-BaseDir          : '/lastXX/dataX/archive' # The (existing) directory. Replace X
-DataDir          : 'XXX' # The (new) directory where the regular images will be stored. Replace X
-LogFileDir       : '/lastXX/dataX/archive/LAST/log/' # The directory wehere the log files will be stored. Replace X
+BaseDir          : '/lastXXe/dataX/archive' # The (existing) directory. Replace X
+DataDir          : 'new' # The (new) directory where the regular images will be stored. Replace X
+LogFileDir       : '/lastXX/dataX/archive/log/' # The directory wehere the log files will be stored. Replace X
 
 DarkDBDir        : '/last03/data/ServiceImages/darkDB' # The directory where "Dark" images will be stored. Replace X
 FlatDBDir        : '/last03/data/ServiceImages/flatDB' # The directory where "Flat" images will be stored. Replace X

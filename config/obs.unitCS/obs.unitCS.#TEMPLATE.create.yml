@@ -1,6 +1,6 @@
 # This is a template, please create a copy before changing anything
 ProjName           : 'LAST'
-NodeNumber         : 0 
+NodeNumber         : 1 
 TimeZone           : 2   # hours
 
 # how much hardware connected
