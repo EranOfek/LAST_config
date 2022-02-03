@@ -2,9 +2,10 @@
 # Some values were kept at deafult, but should be verified
 PhysicalPort    : 'pci-XXXX:XX:XX.X-usb-X:X:X.X' # The physical port where the mount is connected. Replace X
 
-ObsLon          : 34.81694
-ObsLat          : 31.91111
-ObsHeight       : 40
+# Coordinates are according to neo't smadar (node 1), but should be recalculated for better accuracy
+ObsLon          : 35.04085833
+ObsLat          : 30.0530725
+ObsHeight       : 415.4 # was 'H' height?
 
 # [Az,Alt] limit - nodes points of the interpolation for the limit mask
 # Mandatory: first point Az=0, last point Az=360

@@ -2,8 +2,8 @@
 #CameraModel       : 'QHY600M-PH'
 CameraType        : 'QHY'
 
-ImageSizeXY       : [6387, 9576]
-CCDSEC            : [1, 6387, 1, 9576]
+ImageSizeXY       : [6422, 9600]
+CCDSEC            : [1, 6422, 1, 9600]
 SENSSEC           : []     # [xmin xmax ymin ymax] senstive area CCDSEC
 OVERSEC           : []     # bias overscan CCDSEC
 

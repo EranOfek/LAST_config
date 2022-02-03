@@ -1,11 +1,11 @@
 # This is a template, please create a copy before changing anything
-HAMotorDirection  : 0
-DecMotorDirection : 0
+HAMotorDirection  : X # 1 or -1
+DecMotorDirection : X # 1 or -1
 
-DefaultHAZeroPositionTicks  : 0 # reading of the HA encoder on the meridian
-DefaultDecZeroPositionTicks : 0 # reading of the Dec encoder at equatorial plane
+DefaultHAZeroPositionTicks  : X # reading of the HA encoder on the meridian
+DefaultDecZeroPositionTicks : X # reading of the Dec encoder at equatorial plane
 
-HAZeroPositionTicks : 0 # reading of the HA encoder on the meridian
-DecZeroPositionTicks : 0 # reading of the Dec encoder at equatorial plane 
+HAZeroPositionTicks : X # reading of the HA encoder on the meridian
+DecZeroPositionTicks : X # reading of the Dec encoder at equatorial plane 
 
-Verbose : 0
+Verbose : X

@@ -1,13 +1,13 @@
 # This is a template, please create a copy before changing anything
 ProjName           : 'LAST'
-NodeNumber         : 1 
+NodeNumber         : 1   # 0 for rehovot, 1 for neo't smadar
 TimeZone           : 2   # hours
 
 # how much hardware connected
 LocalTelescopes   :  []
 
 # write the following as string, which will be eval()'d in matlab
-RemoteTelescopes  :  '{X,X}' # syntax: {[indices for first slave], [indices for second], ...}
+RemoteTelescopes  :  '{1,2,3,4}' # syntax: {[indices for first slave], [indices for second], ...}
 
 Id : '0'    # rewrite the Id
 
