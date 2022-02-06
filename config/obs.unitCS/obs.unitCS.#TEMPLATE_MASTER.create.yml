@@ -2,15 +2,16 @@
 ProjName           : 'LAST'
 NodeNumber         : 1   # 0 for rehovot, 1 for neo't smadar
 TimeZone           : 2   # hours
+Id                 : '0' # rewrite the Id
 
 # how much hardware connected
-LocalTelescopes   :  []
+LocalTelescopes   :  [] # leave empty for master
 
 # write the following as string, which will be eval()'d in matlab
 RemoteTelescopes  :  '{1,2,3,4}' # syntax: {[indices for first slave], [indices for second], ...}
 
-Id : '0'    # rewrite the Id
 
+# Only the master has a power switch unit and a mount
 # power switch driver
 PowerDriver : [inst.tinycontrolIPpowerSocket] # [] to force to cell
 
@@ -22,6 +23,8 @@ CameraPowerOutput : [1, 2]
 # mount driver (for now 1)
 MountDriver : X  # for simulated or connected mount - inst.XerxesSimulated / XerxesMount
 
+
+# Not sure if neccecary, as master has no cameras and focusers
 # camera drivers (as many as LocalTelescopes)
 CameraDriver : [inst.QHYccd]
 

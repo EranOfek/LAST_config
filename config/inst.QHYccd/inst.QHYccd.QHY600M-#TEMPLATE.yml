@@ -4,8 +4,8 @@ CameraType        : 'QHY'
 
 ImageSizeXY       : [6422, 9600]
 CCDSEC            : [1, 6422, 1, 9600]
-SENSSEC           : []     # [xmin xmax ymin ymax] senstive area CCDSEC
-OVERSEC           : []     # bias overscan CCDSEC
+SENSSEC           : [1, 6389, 25, 9600]     # [xmin xmax ymin ymax] senstive area CCDSEC
+OVERSEC           : [6390, 6422, 1, 24]     # bias overscan CCDSEC
 
 # measured parameters
 Measured_Modes    : [1, 2]
