@@ -1,0 +1,13 @@
+PhysicalPort    : 'MOUNT_ADDRESS'
+
+ObsLon          : MOUNT_LON
+ObsLat          : MOUNT_LAT
+ObsHeight       : MOUNT_HEIGHT
+
+# [Az,Alt] limit - nodes points of the interpolation for the limit mask
+# Mandatory: first point Az=0, last point Az=360
+AzAltLimit      : [[0, 0],  [90, 10], [180, 15], [270, 10],  [360, 0]]
+MinAlt          : 15
+HALimit         : 120
+
+LogFileDir      : '/COMPUTER_NAME/DISK_NAME/archive/log'

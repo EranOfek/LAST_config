@@ -1,0 +1,20 @@
+# differently than other devices, at connect time we look for a specific 
+#  hardware Id. Hence PhysicalId is specified at object creation time and not
+#  later at connection time.
+PhysicalId  : CAMERA_ID
+Verbose     : true
+
+BaseDir          : '/COMPUTER_NAME/DISK_NAME/archive'
+DataDir          : 'new'
+LogFileDir       : '/COMPUTER_NAME/DISK_NAME/archive/log/'
+
+DarkDBDir        : '/COMPUTER_NAME/data/ServiceImages/darkDB'
+FlatDBDir        : '/COMPUTER_NAME/data/ServiceImages/flatDB' 
+DarkDB           : 'darkDB.mat'
+FlatDB           : 'flatDB.mat'
+
+Filter           : 'FILTER_NAME'
+
+CameraNumber     : CAMERA_NUM
+CameraPos        : 'CAMERA_POS'
+TelescopeOffset  : TELESCOPE_OFFSET
