@@ -1,0 +1,9 @@
+# This is a template, please create a copy before changing anything
+HAMotorDirection  : X
+DecMotorDirection : X
+
+DefaultHAZeroPositionTicks  : X # reading of the HA encoder on the meridian
+DefaultDecZeroPositionTicks : X # reading of the Dec encoder at equatorial plane
+
+HAZeroPositionTicks : X # reading of the HA encoder on the meridian
+DecZeroPositionTicks : X # reading of the Dec encoder at equatorial plane 

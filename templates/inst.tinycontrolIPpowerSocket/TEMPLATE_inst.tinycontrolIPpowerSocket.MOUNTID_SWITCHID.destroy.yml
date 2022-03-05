@@ -1,0 +1,2 @@
+# Camera 1 (or 3), Camera 2 (or 4), Mount (or empty), Computer, RESERVED 
+Outputs : [0 ,0, 0, 0, 1, 1]  # desired status of the outputs at disconnect
