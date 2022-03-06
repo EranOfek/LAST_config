@@ -42,7 +42,13 @@ function create_LAST_config(Node, Mount, Args)
     MountHeight = Args.MountHeight;
     
     if isempty(Args.CameraPhysicalID)
-        CameraPhysicalID = {'aaaa','bbbb','cccc','dddd'}; % a cell with 4 entries
+        PhysicalCameraList = readcell('cameras_PhysicalAddress.txt');
+        MountList = cell2mat(PhysicalCameraList(:,1));
+        CamList   = cell2mat(PhysicalCameraList(:,2));
+        
+        Flag = MountList == Mount;
+        CameraPhysicalID = PhysicalCameraList(Flag);
+       
     else
         CameraPhysicalID = Args.CameraPhysicalID;
     end
