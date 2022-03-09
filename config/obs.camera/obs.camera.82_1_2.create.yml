@@ -1,0 +1,20 @@
+# differently than other devices, at connect time we look for a specific 
+#  hardware Id. Hence PhysicalId is specified at object creation time and not
+#  later at connection time.
+PhysicalId  : QHY600M-aa1c6f4fab9d48eab
+Verbose     : true
+
+BaseDir          : '/last02e/data2/archive'
+DataDir          : 'new'
+LogFileDir       : '/last02e/data2/archive/log/'
+
+DarkDBDir        : '/last02e/data/ServiceImages/darkDB'
+FlatDBDir        : '/last02e/data/ServiceImages/flatDB'
+DarkDB           : 'darkDB.mat'
+FlatDB           : 'flatDB.mat'
+
+Filter           : 'clear'
+
+CameraNumber     : 2
+CameraPos        : 'SE'
+TelescopeOffset  : [1.1, -1.65]

@@ -1,0 +1,10 @@
+HAMotorDirection  : 1
+DecMotorDirection : 1
+
+DefaultHAZeroPositionTicks  : -932085
+DefaultDecZeroPositionTicks : -20247785
+
+HAZeroPositionTicks :   -932085
+DecZeroPositionTicks : -20061300
+
+Verbose :  1
