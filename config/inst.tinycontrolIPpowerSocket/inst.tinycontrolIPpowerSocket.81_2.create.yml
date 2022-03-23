@@ -1,1 +1,2 @@
-Host   : pswitch01w   # IP or name of the switch
+#Host   : pswitch01w   # IP or name of the switch
+Host    : 10.23.2.2
