@@ -10,4 +10,4 @@ AzAltLimit      : [[0, 0],  [90, 10], [180, 15], [270, 10],  [360, 0]]
 MinAlt          : 15
 HALimit         : 120
 
-LogFileDir      : '/last01w/data1/archive/log'
+LogFileDir      : '/last01e/data1/archive/log'
