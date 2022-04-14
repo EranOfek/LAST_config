@@ -4,16 +4,17 @@
 PhysicalId  : QHY600M-9591234bb4884c26c
 Verbose     : true
 
-BaseDir          : '/last02/data1'
-DataDir          : 'archive'
-LogFileDir       : '/tmp/last02/data1/archive/LAST/log/'
+BaseDir          : '/last01e/data1/archive'
+DataDir          : 'new'
+LogFileDir       : '/last01e/data1/archive/log/'
 
-DarkDBDir        : '/tmp/last02/data/ServiceImages/darkDB'
-FlatDBDir        : '/tmp/last02/data/ServiceImages/flatDB' 
+DarkDBDir        : '/last01e/data/ServiceImages/darkDB'
+FlatDBDir        : '/last01e/data/ServiceImages/flatDB' 
 DarkDB           : 'darkDB.mat'
 FlatDB           : 'flatDB.mat'
 
 Filter           : 'clear'
 
-CameraNumber     : 1  # NE
-TelescopeOffset  : [0,0]
+CameraNumber     : 1
+CameraPos        : 'NE'
+TelescopeOffset  : [0.0, 0.0]

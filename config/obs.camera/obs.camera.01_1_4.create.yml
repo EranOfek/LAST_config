@@ -2,18 +2,20 @@
 #  hardware Id. Hence PhysicalId is specified at object creation time and not
 #  later at connection time.
 PhysicalId  : QHY600M-14b54b419653bc47e
+
 Verbose     : true
 
-BaseDir          : '/last01/data2'
-DataDir          : 'archive'
-LogFileDir       : '/tmp/last01/data1/archive/LAST/log/'
+BaseDir          : '/last01w/data2/archive'
+DataDir          : 'new'
+LogFileDir       : '/last01w/data2/archive/log/'
 
-DarkDBDir        : '/tmp/last01/data/ServiceImages/darkDB'
-FlatDBDir        : '/tmp/last01/data/ServiceImages/flatDB' 
+DarkDBDir        : '/last01w/data/ServiceImages/darkDB'
+FlatDBDir        : '/last01w/data/ServiceImages/flatDB' 
 DarkDB           : 'darkDB.mat'
 FlatDB           : 'flatDB.mat'
 
 Filter           : 'clear'
 
-CameraNumber     : 4  # NW
-TelescopeOffset  : [0,0]
+CameraNumber     : 4
+CameraPos        : 'NW'
+TelescopeOffset  : [0.0, 0.0]

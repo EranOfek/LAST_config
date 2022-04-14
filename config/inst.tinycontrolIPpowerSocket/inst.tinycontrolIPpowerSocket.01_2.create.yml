@@ -1,1 +1,2 @@
-Host   : 10.23.2.2  # IP assigned through the webby, currently testing with SWITCH2
+#Host   : pswitch01w   # IP or name of the switch
+Host    : 10.23.2.2

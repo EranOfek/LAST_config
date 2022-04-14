@@ -1,1 +1,1 @@
-Outputs : [0, 0, 0, 0, 0, 0]  # desired status of the outputs at disconnect
+Outputs : [0 ,0, 0, 0, 0, 0]  # desired status of the outputs at disconnect
