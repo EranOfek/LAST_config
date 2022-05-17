@@ -13,4 +13,4 @@ RemoteTelescopes  :  '{}' # syntax: {[indices for first slave], [indices for sec
 CameraDriver : ['inst.QHYccd']
 
 # focuser drivers (as many as LocalTelescopes)
-FocuserDriver : []
+FocuserDriver : ['inst.CelestronFocuser']
