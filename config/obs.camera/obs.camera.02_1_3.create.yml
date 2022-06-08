@@ -17,4 +17,5 @@ Filter           : 'clear'
 
 CameraNumber     : 3
 CameraPos        : 'SW'
-TelescopeOffset  : [-1.1, -1.65]
+# Based on plate adjustment done on 2022-06-08
+TelescopeOffset  : [-1.11, -1.60]
