@@ -1,1 +1,2 @@
-Port : '/dev/ttyUSB0' # replace with physical address when known
+# Port : '/dev/ttyUSB0' # replace with physical address when known
+Port : 'pci-0000:45:00.1-usb-0:4.2:1.0' # Currently, on LAST0
