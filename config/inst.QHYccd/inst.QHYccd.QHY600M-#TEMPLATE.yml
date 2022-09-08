@@ -4,8 +4,9 @@ CameraType        : 'QHY'
 
 ImageSizeXY       : [6422, 9600]
 CCDSEC            : [1, 6422, 1, 9600]
-SENSSEC           : [1, 6389, 25, 9600]     # [xmin xmax ymin ymax] senstive area CCDSEC
-OVERSEC           : [6390, 6422, 1, 24]     # bias overscan CCDSEC
+SENSSEC           : [1, 6388, 25, 9600]     # [xmin xmax ymin ymax] senstive area CCDSEC
+OVERSECX          : [6389, 6422, 1, 9600]     # bias overscan CCDSEC
+OVERSECY          : [1, 6422, 1, 24]
 
 # measured parameters
 Measured_Modes    : [1, 2]
@@ -16,14 +17,16 @@ Measured_DC       : [0.01, 0.01]   # dark current
 Measured_Saturation : [60000, 60000]
 Measured_NonLin   : [50000, 50000]
 
-# measured parameters
+# measured parameters (repeat for the current mode, no lookup from above)
 GAIN      : 0.9     # measured Gain [e-/adu]
-READNOI   : 1.5
+READNOI   : 4.5
 DARKCUR   : 0.01
+SATURVAL  : 60000
+NONLIN    : 50000
 
 # camera setting parameters
-ReadMode  : 1
-Offset : 3
+ReadMode  : 2
+Offset : 4
 Gain   : 0       # camera gain setting value
 Binning: [1, 1]
 Temperature : -5
