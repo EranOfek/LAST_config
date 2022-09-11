@@ -8,7 +8,7 @@
 %  will be devised in future.
 % This script asks for user input as for the .mat file name, and for the
 %  label of the resulting .create.yml file
-tablename=input('file with the table written by pipeline.last.pointingModel?\n','s');
+tablename=input('file with the table written by pipeline.last.pointingModel ?\n','s');
 
 try
     load(tablename);
@@ -26,41 +26,43 @@ end
 
 var=strcat('R',num2str(find(rmodel)'));
 hadec={};
-delta={};
+deltaHA={}; deltaDec={};
 for i=1:size(var,1)
     tab=eval(var(i,:));
     if isa(tab,'table')
         hadec{i}=[tab.M_JHA,tab.M_JDEC];
         for j=1:i-1
-            if hadec{i} ~= hadec{j}
+            if numel(hadec{i}) ~= numel(hadec{j}) || ...
+               sqrt(sum(std(hadec{i}-hadec{j}).^2)) > 1/60
                 fprintf('table %s has different M_JHA and M_JDEC than its predecessors!\n',var(i,:))
                 fprintf('this case is not yet handled\n')
                 return
             end
         end
-        delta=[tab.DiffHA,tab.DiffDec];
+        deltaHA{i}=tab.DiffHA;
+        deltaDec{i}=tab.DiffDec;
     else
         fprintf('variable %s is not a table!\n',var(i))
     end
 end
 
-deltaHA=mean(delta{:}(:,1),1); %fixme
-deltaDec=mean(delta{:}(:,2),1); %fixme
+deltaHA=mean(cell2mat(deltaHA),2); %fixme
+deltaDec=mean(cell2mat(deltaDec),2); %fixme
 
 configname=input('which label to assign to the configuration file?\n','s');
 
 fid=fopen(['obs.pointingModel.' configname '.create.yml'],'w');
 fprintf(fid,'# pointing model interpolation data\n');
 fprintf(fid,'# NaNs removed,  otherwise they are read as strings!\n\n');
-fprintf(fid,'# format:       [HA,  Dec,  offsetHA,  offsetDec]\n\n');
+fprintf(fid,'# format:       [M_JHA,  M_JDec,  offsetHA,  offsetDec]\n\n');
 fprintf(fid,'PointingData : [\n');
 for k=1:size(hadec{1},1)
     if ~isnan(deltaHA(k)) && ~isnan(deltaDec(k))
-        fprintf('              [%f, %f, %f, %f]\n',hadec{1}(k,1),...
-                hadec{1}(k,2),deltaHA(k),deltaDec(k));
+        fprintf(fid,'                [%f, %f, %f, %f],\n',hadec{1}(k,1),...
+                    hadec{1}(k,2),deltaHA(k),deltaDec(k));
     end
 end
 fprintf(fid,'               ]\n');
-
+fclose(fid);
 
 clear R1 R2 R3 R4 i j k tablename var hadec delta tab
