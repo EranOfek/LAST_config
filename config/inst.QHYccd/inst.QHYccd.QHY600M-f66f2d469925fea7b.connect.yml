@@ -8,7 +8,7 @@ SENSSEC           : [1, 6388, 25, 9600]     # [xmin xmax ymin ymax] senstive are
 OVERSECX          : [6389, 6422, 1, 9600]     # bias overscan CCDSEC
 OVERSECY          : [1, 6422, 1, 24]
 
-# measured parameters
+# parameters which are measured separately, and copied here for reference
 Measured_Modes    : [1, 2]
 Measured_GainMode : [0, 58]
 Measured_RN       : [3.5, 1.5]
@@ -17,15 +17,19 @@ Measured_DC       : [0.01, 0.01]   # dark current
 Measured_Saturation : [60000, 60000]
 Measured_NonLin   : [50000, 50000]
 
-# measured parameters (repeat for the current mode, no lookup from above)
-GAIN      : 0.9     # measured Gain [e-/adu]
-READNOI   : 4.5
-DARKCUR   : 0.01
-SATURVAL  : 60000
-NONLIN    : 50000
+# Keys to be copied verbatim in FITS header (remember to keep the strict
+#  format [ ['FITSKEY','value'],... ] )
+# Measured parameters like above, but repeated here for the current mode, 
+#  not looked up lookup from above
+FITSHeader        : [['GAIN',0.9],     # measured Gain [e-/adu]
+                     ['READNOI',4.5],
+                     ['DARKCUR',0.01],
+                     ['SATURVAL',60000],
+                     ['NONLIN',50000]
+                    ]
 
 # camera setting parameters
-ReadMode  : 2
+ReadMode  : 1
 Offset : 4
 Gain   : 0       # camera gain setting value
 Binning: [1, 1]
