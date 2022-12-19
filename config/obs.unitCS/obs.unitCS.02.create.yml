@@ -29,6 +29,5 @@ FocuserDriver : []
 
 # Keys to be copied verbatim in FITS header (remember to keep the strict
 #  format [ ['FITSKEY','value'],... ] )
-FITSHeader        : [['PROJNAME','LAST']
-                    ]
+FITSHeader        : []
 
