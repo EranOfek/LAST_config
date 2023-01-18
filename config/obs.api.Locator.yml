@@ -1,0 +1,17 @@
+---
+#
+# This configuration file defines default and specific values
+#  for obs.api.Locator.DriverClass fields
+#
+# On a development machine the values can be locally changed to reflect
+#  the hardware driver classes being used.
+#
+Default:
+ mount:     obs.mount
+ camera:    obs.camera
+ focuser:   obs.focuser
+ unit:      obs.unit
+
+Specific:
+ mount:     obs.mount
+ focuser:   inst.CelestronFocuser

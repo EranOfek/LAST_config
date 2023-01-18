@@ -14,3 +14,8 @@ Projects:
   Nmounts: 18
   ScopesPerMount: 1
   Dialect: ascom
+
+- Name: LOCAL
+  Nmounts: 1
+  ScopesPerMount: 1
+  Dialect: last

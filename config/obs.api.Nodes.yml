@@ -1,0 +1,10 @@
+Nodes:
+- Name: Neot Smadar
+  NodeId: 1
+  ProjectName: LAST
+  Mounts: 12
+
+- Name: Local
+  NodeId: 1
+  ProjectName: LOCAL
+  Mounts: 1
