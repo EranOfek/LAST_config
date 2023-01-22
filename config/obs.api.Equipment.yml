@@ -1,0 +1,14 @@
+---
+default:
+- mount:
+    driver: obs.mount
+- focuser:
+    driver: inst.CelestronFocuser
+- camera:
+    driver: obs.camera
+
+focuser:
+- id: 1
+    driver: obs.focuser
+- id: 3
+    driver: obs.focuser
