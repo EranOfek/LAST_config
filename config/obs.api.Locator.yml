@@ -1,17 +1,25 @@
 ---
 #
-# This configuration file defines default and specific values
-#  for obs.api.Locator.DriverClass fields
+# This file configures values for obs.api.Locator.DriverClass field
 #
-# On a development machine the values can be locally changed to reflect
-#  the hardware driver classes being used.
+# If a specific overwrite exists, it takes precedence.  If not, the respective
+#  default is used.
 #
-Default:
+default:
  mount:     obs.mount
  camera:    obs.camera
  focuser:   obs.focuser
  unit:      obs.unit
 
-Specific:
- mount:     obs.mount
- focuser:   inst.CelestronFocuser
+#
+# Per-host overwrites.  The example below shows, for host last02e:
+#  - A specific focuser class
+#  - A default focuser class
+#  - A default camera class
+#  - Other, not specified, equipment types will get their value(s) from
+#     the defaults above.
+#
+# last02e:
+#   focuser2: specific.class.for.focuser.2.on.last02e
+#   focuser:  default.focuser.class.on.last02e
+#   camera:   default.camera.class.on.last02e
