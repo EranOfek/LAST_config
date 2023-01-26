@@ -1,3 +1,6 @@
+#
+# A list of all known nodes
+#
 Nodes:
 - Name: Neot Smadar
   NodeId: 1
@@ -8,3 +11,12 @@ Nodes:
   NodeId: 1
   ProjectName: LOCAL
   Mounts: 1
+
+#
+# The current node
+#
+This:
+  Name: Neot Smadar
+  NodeId: 1
+  ProjectName: LAST
+  Mounts: 12
