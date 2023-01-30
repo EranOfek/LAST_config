@@ -12,7 +12,7 @@
 default:
  mount:     obs.mount
  camera:    obs.camera
- focuser:   obs.focuser
+ focuser:   inst.CelestronFocuser
  unit:      obs.unit
 
 #
