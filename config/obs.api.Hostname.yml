@@ -1,0 +1,6 @@
+#
+# This file can be used to overwrite the value of the current hostname.
+# It is read by the obs.api.ConfiguredHostname class.
+# The only field is EffectiveHostname, see example (commented out) below
+#
+#EffectiveHostname: lastXXw
