@@ -1,4 +1,4 @@
-Id : '02'    # rewrite the Id
+Id : '03'    # rewrite the Id
 
 # how much hardware connected
 LocalTelescopes   :  [1]
