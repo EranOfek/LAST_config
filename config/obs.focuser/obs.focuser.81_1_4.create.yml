@@ -1,5 +1,0 @@
-#
-PromptMirrorLock : false
-
-#PhysicalAddress : pci-0000:48:00.0-usb-0:2:1.0
-PhysicalAddress : pci-0000:45:00.1-usb-0:4.4:1.0
