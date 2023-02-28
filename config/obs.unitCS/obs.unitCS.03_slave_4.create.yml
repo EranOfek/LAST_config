@@ -1,0 +1,16 @@
+Id : '03'    # rewrite the Id
+
+# how much hardware connected
+LocalTelescopes   :  [4]
+
+# write the following as string, which will be eval()'d in matlab
+RemoteTelescopes  :  '{}' # syntax: {[indices for first slave], [indices for second], ...}
+
+#    slave units need RemoteTelescopes={}, otherwise their initialization tries
+#      to open further slaves (failing because of nested callbacks)
+
+# camera drivers (as many as LocalTelescopes)
+CameraDriver : ['inst.QHYccd']
+
+# focuser drivers (as many as LocalTelescopes)
+FocuserDriver : ['inst.CelestronFocuser']
