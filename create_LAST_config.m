@@ -1,11 +1,13 @@
 function create_LAST_config(Node, Mount, Args)
-    %
+    % example:
+    % create_LAST_config(1,7,'ConfigDir','LAST_config/config','CameraPhysicalID',{'111111','22222'})
+
     
     arguments
         Node    = 1;
         Mount   = 71;
         Args.ConfigDir = '/home/ocs/matlab/LAST/LAST_config/config';
-        Args.FilesTemplate = 'TEMPLATE_*.yml';
+        Args.FilesTemplate = '*#TEMPLATE*.yml';
         Args.Dirs = {'inst.IndoorSensors',...
                      'inst.OutdoorMeteoSensors',...
                      'inst.QHYccd',...
@@ -229,7 +231,7 @@ function TempFileName = constructFileNames(TempFileName, Args)
         TempFileName
         Args.CAMERA_ID    = NaN;
         Args.CAMERA_NUM   = NaN;
-        Args.TEMPLATE_    = '';
+        Args.TEMPLATE     = '#TEMPLATE';
         Args.MOUNTID      = NaN;
         Args.SWITCHID     = NaN;
         Args.MOTORID      = NaN;
@@ -242,7 +244,7 @@ function TempFileName = constructFileNames(TempFileName, Args)
             TempFileName = strrep(TempFileName, FN{Ifn}, Args.(FN{Ifn}));
         else
             if ~isnan(Args.(FN{Ifn}))
-                TempFileName = strrep(TempFileName, FN{Ifn}, Args.(FN{Ifn}));
+                TempFileName = strrep(TempFileName, Args.TEMPLATE, Args.(FN{Ifn}));
             end
         end
     end
