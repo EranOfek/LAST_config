@@ -1,0 +1,18 @@
+#
+# This config file can override the hostname used
+#  by the obs.api.Locator class.
+# The intended use is when you run either the API or the WebApi
+#  on a mach
+#
+# This occurs on two occasions:
+#   1. On the API side, when the Locator decides whether
+#       to use a local or a remote connection to the wrapped class
+#   2. On the WebApi side, where the server receives requests
+#
+
+#
+# The only configuration field is EffectiveHostname (see below).
+# Uncomment and change it.
+#
+# EffectiveHostname: last08w
+
