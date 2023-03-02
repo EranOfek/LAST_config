@@ -26,6 +26,7 @@ fi
 
 unit=`printf "%02d" $1`
 side=('e' 'e' 'w' 'w')
+cardinal=('NE' 'SE' 'SW' 'NW')
 
 echo "Creating configuration files for unit $unit :"
 
@@ -78,7 +79,7 @@ tail +2 config/inst.XerxesMount/inst.XerxesMount.#TEMPLATE.connect.yml >\
 
 if [[ -z $3 || -z $4 || -z $5 || -z $6 ]]; then
    echo "I was expecting four alphanumeric serial numbers of QHY cameras;"
-   echo " Since they were not given, I'll take the missing ones from the list:"
+   echo "Since they were not given, I'll take the missing ones from the list:"
 fi
 
 CamSN=('' '' '' '')
@@ -106,7 +107,8 @@ else
     CamSN[3]=$6
 fi
 
-echo "  - creating four inst.QHYccd...connect configurations for cameras ${CamSN[@]}"
+echo "  - creating four inst.QHYccd...connect configurations for cameras:"
+echo "    " ${CamSN[@]}
 
 for s in "${CamSN[@]}"; do
     tail +2 config/inst.QHYccd/inst.QHYccd.QHY600M-#TEMPLATE.connect.yml >\
@@ -115,23 +117,13 @@ done
 
 echo "  - creating four obs.camera...create configurations"
 
-
-tail +3 config/obs.camera/obs.camera.#TEMPLATE.create.yml |\
-        sed -e s/XXXXXXXXXXXXXXXXX/$CamSN[0]/  -e s/lastXX/last$unit\e/g \
-            -e s/dataX/data1/ -e s/NN/1/ -e s/NESW/NE/ > \
-        config/obs.camera/obs.camera.$unit\_1_1.create.yml
-tail +3 config/obs.camera/obs.camera.#TEMPLATE.create.yml |\
-        sed -e s/XXXXXXXXXXXXXXXXX/$CamSN[1]/  -e s/lastXX/last$unit\e/g \
-            -e s/dataX/data2/ -e s/NN/2/ -e s/NESW/SE/ > \
-        config/obs.camera/obs.camera.$unit\_1_2.create.yml
-tail +3 config/obs.camera/obs.camera.#TEMPLATE.create.yml |\
-        sed -e s/XXXXXXXXXXXXXXXXX/$CamSN[2]/  -e s/lastXX/last$unit\w/g \
-            -e s/dataX/data1/ -e s/NN/3/ -e s/NESW/SW/ > \
-        config/obs.camera/obs.camera.$unit\_1_3.create.yml
-tail +3 config/obs.camera/obs.camera.#TEMPLATE.create.yml |\
-        sed -e s/XXXXXXXXXXXXXXXXX/$CamSN[3]/  -e s/lastXX/last$unit\w/g \
-            -e s/dataX/data2/ -e s/NN/4/ -e s/NESW/NW/ > \
-        config/obs.camera/obs.camera.$unit\_1_4.create.yml
+for i in {1..4}; do
+  i1=$(( $i - 1))
+  tail +3 config/obs.camera/obs.camera.#TEMPLATE.create.yml |\
+        sed -e s/XXXXXXXXXXXXXXXXX/${CamSN[$i1]}/  -e s/lastXX/last$unit${side[$i1]}/g \
+            -e s/dataX/data1/ -e s/NN/$i/ -e s/NESW/${cardinal[$i1]}/ > \
+          config/obs.camera/obs.camera.$unit\_1_$i.create.yml
+done
 
 ###############
 
@@ -155,6 +147,9 @@ tail +3 config/obs.focuser/obs.focuser.#TEMPLATE.create.yml | \
 
 echo "  - creating obs.mount...create configuration"
 
+# TODO: ObsLon and ObsLat could be computed precisely from the unit number,
+#       since positions are gridded
+
 tail +3 config/obs.mount/obs.mount.#TEMPLATE.create.yml | \
    sed -e "s|XXXX|\/dev\/ttyS4|" -e s/lastXX/last$unit\e/ > \
    config/obs.mount/obs.mount.$unit\_1.create.yml
@@ -168,7 +163,7 @@ tail +2 config/obs.unitCS/obs.unitCS.#TEMPLATE_MASTER.create.yml > \
 
 for i in {1..4}; do
     tail +2 config/obs.unitCS/obs.unitCS.#TEMPLATE_SLAVE.create.yml | \
-        sed -e s/XX/$unit/ -e s/NN/$i/ >  config/obs.unitCS/obs.UnitCS.$unit\_slave_$i.create.yml
+        sed -e s/XX/$unit/ -e s/NN/$i/ >  config/obs.unitCS/obs.unitCS.$unit\_slave_$i.create.yml
 done
 
 ###############

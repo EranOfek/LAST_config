@@ -1,9 +1,10 @@
 # This is a template, please create a copy before changing anything
 #
 # differently than other devices, at connect time we look for a specific 
-# hardware Id. Hence PhysicalId is specified at object creation time and not
-# later at connection time.
-PhysicalId  : QHY600M-XXXXXXXXXXXXXXXXX 
+#  hardware Id. Hence PhysicalId is specified at object creation time and not
+#  later at connection time.
+PhysicalId  : QHY600M-XXXXXXXXXXXXXXXXX
+
 Verbose     : true
 
 BaseDir          : '/lastXX/dataX/archive' # The (existing) directory.
@@ -17,6 +18,6 @@ FlatDB           : 'flatDB.mat'
 
 Filter           : 'clear'
 
-CameraNumber     : NN 
+CameraNumber     : NN
 CameraPos        : 'NESW'
-TelescopeOffset  : [0, 0]
+TelescopeOffset  : [0.0, 0.0]
