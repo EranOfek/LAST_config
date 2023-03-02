@@ -82,30 +82,15 @@ if [[ -z $3 || -z $4 || -z $5 || -z $6 ]]; then
    echo "Since they were not given, I'll take the missing ones from the list:"
 fi
 
-CamSN=('' '' '' '')
-if [[ -z $3 ]]; then
-    CamSN[0]=`grep "$unit, 1" cameras_PhysicalAddress.txt | cut -f 2 | sed -e s/QHY600M-//`
-else
-    CamSN[0]=$3
-fi
+CamSN=("$3" "$4" "$5" "$6");
 
-if [[ -z $4 ]]; then
-    CamSN[1]=`grep "$unit, 2" cameras_PhysicalAddress.txt | cut -f 2 | sed -e s/QHY600M-//`
-else
-    CamSN[1]=$4
-fi
+for i in {1..4}; do
+  i1=$(( $i - 1))
+  if [[ -z ${CamSN[$i1]} ]]; then
+      CamSN[$i1]=`grep "$unit, $i" cameras_PhysicalAddress.txt | cut -f 2 | sed -e s/QHY600M-//`
+  fi
+done
 
-if [[ -z $5 ]]; then
-    CamSN[2]=`grep "$unit, 3" cameras_PhysicalAddress.txt | cut -f 2 | sed -e s/QHY600M-//`
-else
-    CamSN[2]=$5
-fi
-
-if [[ -z $6 ]]; then
-    CamSN[3]=`grep "$unit, 4" cameras_PhysicalAddress.txt | cut -f 2 | sed -e s/QHY600M-//`
-else
-    CamSN[3]=$6
-fi
 
 echo "  - creating four inst.QHYccd...connect configurations for cameras:"
 echo "    " ${CamSN[@]}
@@ -159,7 +144,7 @@ tail +3 config/obs.mount/obs.mount.#TEMPLATE.create.yml | \
 echo "  - creating obs.unitCS...create configuration for master and four slaves"
 
 tail +2 config/obs.unitCS/obs.unitCS.#TEMPLATE_MASTER.create.yml > \
-    config/obs.unitCS/obs.UnitCS.$unit.create.yml
+    config/obs.unitCS/obs.unitCS.$unit.create.yml
 
 for i in {1..4}; do
     tail +2 config/obs.unitCS/obs.unitCS.#TEMPLATE_SLAVE.create.yml | \
