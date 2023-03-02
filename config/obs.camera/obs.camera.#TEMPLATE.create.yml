@@ -6,17 +6,17 @@
 PhysicalId  : QHY600M-XXXXXXXXXXXXXXXXX 
 Verbose     : true
 
-BaseDir          : '/lastXXe/dataX/archive' # The (existing) directory. Replace X
-DataDir          : 'new' # The (new) directory where the regular images will be stored. Replace X
-LogFileDir       : '/lastXX/dataX/archive/log/' # The directory wehere the log files will be stored. Replace X
+BaseDir          : '/lastXX/dataX/archive' # The (existing) directory.
+DataDir          : 'new' # The (new) directory where the regular images will be stored.
+LogFileDir       : '/lastXX/dataX/archive/log/' # The directory wehere the log files will be stored.
 
-DarkDBDir        : '/last03/data/ServiceImages/darkDB' # The directory where "Dark" images will be stored. Replace X
-FlatDBDir        : '/last03/data/ServiceImages/flatDB' # The directory where "Flat" images will be stored. Replace X
+DarkDBDir        : '/lastXX/data/ServiceImages/darkDB' # The directory where "Dark" images will be stored.
+FlatDBDir        : '/lastXX/data/ServiceImages/flatDB' # The directory where "Flat" images will be stored.
 DarkDB           : 'darkDB.mat'
 FlatDB           : 'flatDB.mat'
 
 Filter           : 'clear'
 
-CameraNumber     : X 
-CameraPos        : 'XX'
-TelescopeOffset  : [X.X, X.X]
+CameraNumber     : NN 
+CameraPos        : 'NESW'
+TelescopeOffset  : [0, 0]

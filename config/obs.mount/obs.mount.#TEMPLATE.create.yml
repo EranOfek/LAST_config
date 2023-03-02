@@ -1,8 +1,8 @@
 # This is a template, please create a copy before changing anything
 # Some values were kept at deafult, but should be verified
-PhysicalPort    : 'pci-XXXX:XX:XX.X-usb-X:X:X.X' # The physical port where the mount is connected. Replace X
+PhysicalPort    : 'XXXX' # The physical port where the mount is connected.
 
-# Coordinates are according to neo't smadar (node 1), but should be recalculated for better accuracy
+# Coordinates are according to Neot Smadar (node 1), but should be recalculated for better accuracy
 ObsLon          : 35.04085833
 ObsLat          : 30.0530725
 ObsHeight       : 415.4 # was 'H' height?
@@ -13,10 +13,5 @@ AzAltLimit      : [[0, 0],  [90, 10], [180, 15], [270, 10],  [360, 0]]
 MinAlt          : 15
 HALimit         : 120
 
-DecZeroPositionTicks :     0 # reading of the Dec encoder at equatorial plane
-HAZeroPositionTicks  :      0 # reading of the HA encoder on the meridian
-DefaultDecZeroPositionTicks : 0 # reading of the Dec encoder at equatorial plane
-DefaultHAZeroPositionTicks  : 0 # reading of the HA encoder on the meridian
 
-
-LogFileDir      : '/lastXX/dataX/archive/LAST/log' # The directory where the log files are stored. Replace X
+LogFileDir      : '/lastXX/data1/archive/LAST/log' # The directory where the log files are stored.
