@@ -6,6 +6,9 @@ default:
     driver: inst.CelestronFocuser
 - camera:
     driver: obs.camera
+- switch:
+    driver: inst.tinycontrolIPpowerSocket
+
 
 focuser:
 - id: 1
