@@ -4,3 +4,5 @@
 *.asv
 *.swp
 obs.api.Hostname.yml
+obs.api.Node.yml
+
