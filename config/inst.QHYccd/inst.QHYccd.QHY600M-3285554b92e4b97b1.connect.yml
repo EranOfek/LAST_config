@@ -1,4 +1,3 @@
-# This is a template, please create a copy before changing anything
 #CameraModel       : 'QHY600M-PH'
 CameraType        : 'QHY'
 
@@ -29,7 +28,7 @@ FITSHeader        : [['GAIN',0.9],     # measured Gain [e-/adu]
                     ]
 
 # camera setting parameters
-ReadMode  : 2
+ReadMode  : 1
 Offset : 4
 Gain   : 0       # camera gain setting value
 Binning: [1, 1]

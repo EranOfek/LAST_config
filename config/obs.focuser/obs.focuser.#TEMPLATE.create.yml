@@ -1,5 +1,5 @@
 # This is a template, please create a copy before changing anything
 #
-PromptMirrorLock : # true / false
+PromptMirrorLock :  false
 
-PhysicalAddress : pci-XXXX:XX:XX.X-usb-X:X:X.X # The physical adress where the focuser is connected. Replace X
+PhysicalAddress : XXXX # The physical adress of the (USB) port to which the focuser is connected.
