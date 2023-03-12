@@ -11,7 +11,7 @@
 
 default:
  mount:     obs.mount
- camera:    obs.camera
+ camera:    inst.QHYccd
  focuser:   inst.CelestronFocuser
  pswitch:   inst.tinycontrolIPpowerSocket
  unit:      obs.unit
