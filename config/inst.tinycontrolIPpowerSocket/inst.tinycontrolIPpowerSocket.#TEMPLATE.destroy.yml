@@ -1,2 +1,2 @@
 # This is a template, please create a copy before changing anything
-Outputs : [0, 0, 0, 0, 0, 1]  # desired initial status of the outputs
+Outputs : [0, 0, 0, 0, 0, 0]  # desired status of the outputs at disconnect (computers must remain on in the relevant unit)

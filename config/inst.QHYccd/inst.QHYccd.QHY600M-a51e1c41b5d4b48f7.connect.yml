@@ -1,4 +1,3 @@
-# This is a template, please create a copy before changing anything
 #CameraModel       : 'QHY600M-PH'
 CameraType        : 'QHY'
 
@@ -8,24 +7,15 @@ SENSSEC           : [1, 6388, 25, 9600]     # [xmin xmax ymin ymax] senstive are
 OVERSECX          : [6389, 6422, 1, 9600]     # bias overscan CCDSEC
 OVERSECY          : [1, 6422, 1, 24]
 
-# parameters which are measured separately, and copied here for reference
-Measured_Modes    : [1, 2]
-Measured_GainMode : [0, 58]
-Measured_RN       : [3.5, 1.5]
-Measured_Gain     : [0.77, 0.77]
-Measured_DC       : [0.01, 0.01]   # dark current
-Measured_Saturation : [60000, 60000]
-Measured_NonLin   : [50000, 50000]
-
 # Keys to be copied verbatim in FITS header (remember to keep the strict
 #  format [ ['FITSKEY','value'],... ] )
-# Measured parameters like above, but repeated here for the current mode, 
-#  not looked up lookup from above
-FITSHeader        : [['GAIN',0.9],     # measured Gain [e-/adu]
-                     ['READNOI',4.5],
-                     ['DARKCUR',0.01],
-                     ['SATURVAL',60000],
-                     ['NONLIN',50000]
+ 
+# measured values as per Table 4 of the Overview paper
+FITSHeader        : [['GAIN',0.75],     # measured Gain [e-/adu]
+                     ['READNOI',3.0],
+                     ['DARKCUR',0.008],
+                     ['SATURVAL',62000],
+                     ['NONLIN',62000]
                     ]
 
 # camera setting parameters
