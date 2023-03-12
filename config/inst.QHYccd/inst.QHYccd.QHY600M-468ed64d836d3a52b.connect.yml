@@ -7,15 +7,6 @@ SENSSEC           : [1, 6388, 25, 9600]     # [xmin xmax ymin ymax] senstive are
 OVERSECX          : [6389, 6422, 1, 9600]     # bias overscan CCDSEC
 OVERSECY          : [1, 6422, 1, 24]
 
-# parameters which are measured separately, and copied here for reference
-Measured_Modes    : [1, 2]
-Measured_GainMode : [0, 58]
-Measured_RN       : [3.5, 1.5]
-Measured_Gain     : [0.77, 0.77]
-Measured_DC       : [0.01, 0.01]   # dark current
-Measured_Saturation : [60000, 60000]
-Measured_NonLin   : [50000, 50000]
-
 # Keys to be copied verbatim in FITS header (remember to keep the strict
 #  format [ ['FITSKEY','value'],... ] )
  
