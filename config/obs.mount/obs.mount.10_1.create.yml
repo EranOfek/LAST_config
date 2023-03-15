@@ -1,0 +1,15 @@
+PhysicalPort    : '/dev/ttyS4' # The physical port where the mount is connected.
+
+# Coordinates are according to Neot Smadar (node 1), but should be recalculated for better accuracy
+ObsLon          : 35.04085833
+ObsLat          : 30.0530725
+ObsHeight       : 415.4
+
+# [Az,Alt] limit - nodes points of the interpolation for the limit mask
+# Mandatory: first point Az=0, last point Az=360
+AzAltLimit      : [[0, 0],  [90, 10], [180, 15], [270, 10],  [360, 0]]
+MinAlt          : 15
+HALimit         : 120
+
+
+LogFileDir      : '/last10e/data1/archive/LAST/log' # The directory where the log files are stored.
