@@ -5,9 +5,9 @@ PhysicalId  : QHY600M-749be34fa211a9166
 
 Verbose     : true
 
-BaseDir          : '/last04w/data1/archive' # The (existing) directory.
+BaseDir          : '/last04w/data2/archive' # The (existing) directory.
 DataDir          : 'new' # The (new) directory where the regular images will be stored.
-LogFileDir       : '/last04w/data1/archive/log/' # The directory wehere the log files will be stored.
+LogFileDir       : '/last04w/data2/archive/log/' # The directory wehere the log files will be stored.
 
 DarkDBDir        : '/last04w/data/ServiceImages/darkDB' # The directory where "Dark" images will be stored.
 FlatDBDir        : '/last04w/data/ServiceImages/flatDB' # The directory where "Flat" images will be stored.

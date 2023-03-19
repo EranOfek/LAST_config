@@ -1,2 +1,1 @@
-Outputs : [0 ,0, 1, 1, 0, 0]  # desired status of the outputs at disconnect
-# computers (sockets 3 & 4) must remain on!!
+Outputs : [0, 0, 1, 1, 0, 0]  # desired status of the outputs at disconnect (computers must remain on in the relevant unit)

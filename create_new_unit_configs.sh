@@ -106,7 +106,7 @@ for i in {1..4}; do
   i1=$(( $i - 1))
   tail +3 config/obs.camera/obs.camera.#TEMPLATE.create.yml |\
         sed -e s/XXXXXXXXXXXXXXXXX/${CamSN[$i1]}/  -e s/lastXX/last$unit${side[$i1]}/g \
-            -e s/dataX/data1/ -e s/NN/$i/ -e s/NESW/${cardinal[$i1]}/ > \
+            -e s/dataX/data$(( ($i - 1) % 2 +1 ))/ -e s/NN/$i/ -e s/NESW/${cardinal[$i1]}/ > \
           config/obs.camera/obs.camera.$unit\_1_$i.create.yml
 done
 
