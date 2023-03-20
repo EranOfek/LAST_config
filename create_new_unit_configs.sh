@@ -87,7 +87,7 @@ CamSN=("$3" "$4" "$5" "$6");
 for i in {1..4}; do
   i1=$(( $i - 1))
   if [[ -z ${CamSN[$i1]} ]]; then
-      CamSN[$i1]=`grep "$unit, $i" cameras_PhysicalAddress.txt | cut -f 2 | sed -e s/QHY600M-//`
+      CamSN[$i1]=`grep "$unit, $i" cameras_SerialNumbers.txt | cut -f 2 | sed -e s/QHY600M-//`
   fi
 done
 
