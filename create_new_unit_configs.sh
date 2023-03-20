@@ -65,14 +65,23 @@ tail +2 config/inst.tinycontrolIPpowerSocket/inst.tinycontrolIPpowerSocket.#TEMP
 ################
 
 if [[ -z $2 ]]; then
-   echo "I'm expecting an identification string of the mount controller box; aborting"
-   exit
+   mountid=`grep "$unit," mount_identifiers.txt | cut -f2`
+   if [[ -z $mountid ]]; then
+      echo "Identification string of the mount controller box neither given,"
+      echo  "  nor found in mount_identifiers.txt, aborting"
+      exit
+   else
+      echo "Mount identifier not given, using"
+      echo "  $mountid  from the list in mount_identifiers.txt"
+   fi
+else
+   mountid=$2
 fi
 
 echo "  - creating inst.XerxesMount...connect configuration"
 
 tail +2 config/inst.XerxesMount/inst.XerxesMount.#TEMPLATE.connect.yml >\
-        config/inst.XerxesMount/inst.XerxesMount.$2.connect.yml
+        config/inst.XerxesMount/inst.XerxesMount.$mountid.connect.yml
 
 
 ###############
