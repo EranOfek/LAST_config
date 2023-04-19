@@ -1,4 +1,5 @@
-PhysicalPort    : 'pci-0000:48:00.0-usb-0:4:1.0'
+#PhysicalPort    : 'pci-0000:48:00.0-usb-0:4:1.0'
+PhysicalPort    : '/dev/ttyS5'
 
 ObsLon          : 35.0407331
 ObsLat          : 30.0529838
