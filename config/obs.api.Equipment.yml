@@ -7,7 +7,7 @@ default:
 - camera:
     driver: obs.camera
 - switch:
-    driver: inst.tinycontrolIPpowerSocket
+    driver: inst.tinycontrolIPpowerSocketNew
 
 
 focuser:

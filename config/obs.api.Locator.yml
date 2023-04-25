@@ -10,10 +10,10 @@
 #
 
 default:
- mount:     obs.mount
+ mount:     inst.XerxesMount
  camera:    inst.QHYccd
  focuser:   inst.CelestronFocuser
- pswitch:   inst.tinycontrolIPpowerSocket
+ pswitch:   inst.tinycontrolIPpowerSocketNew
  unit:      obs.unit
 
 #
