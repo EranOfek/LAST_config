@@ -1,4 +1,5 @@
-PhysicalPort    : '/dev/ttyS4' # The physical port where the mount is connected.
+# PhysicalPort    : '/dev/ttyS4' # The physical port where the mount is connected.
+PhysicalPort    : 'pci-0000:04:00.3-usb-0:1:1.0' # The physical port where the mount is connected.
 
 # Coordinates are according to Neot Smadar (node 1), but should be recalculated for better accuracy
 ObsLon          : 35.04085833
