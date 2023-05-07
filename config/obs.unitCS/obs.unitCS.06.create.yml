@@ -1,4 +1,4 @@
-ProjName           : 'LAST'
+BinaryProjName           : 'LAST'
 NodeNumber         : 1   # 0 for rehovot, 1 for Neot Smadar
 TimeZone           : 2   # hours
 
@@ -17,7 +17,7 @@ CameraPowerUnit   : [1, 1, 2, 2]
 CameraPowerOutput : [1, 2, 5, 6]
 
 # mount driver (for now, a single one)
-MountDriver : inst.XerxesMount
+MountDriver : inst.XerxesMountBinary
 MountPowerUnit   : 1
 MountPowerOutput : 3
 
