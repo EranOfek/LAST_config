@@ -7,9 +7,9 @@ SENSSEC           : [1, 6388, 25, 9600]     # [xmin xmax ymin ymax] senstive are
 OVERSECX          : [6389, 6422, 1, 9600]     # bias overscan CCDSEC
 OVERSECY          : [1, 6422, 1, 24]
 
-
 # Keys to be copied verbatim in FITS header (remember to keep the strict
 #  format [ ['FITSKEY','value'],... ] )
+ 
 # measured values as per Table 4 of the Overview paper
 FITSHeader        : [['GAIN',0.75],     # measured Gain [e-/adu]
                      ['READNOI',3.0],

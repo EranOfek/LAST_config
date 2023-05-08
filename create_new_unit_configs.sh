@@ -65,14 +65,23 @@ tail +2 config/inst.tinycontrolIPpowerSocket/inst.tinycontrolIPpowerSocket.#TEMP
 ################
 
 if [[ -z $2 ]]; then
-   echo "I'm expecting an identification string of the mount controller box; aborting"
-   exit
+   mountid=`grep "$unit," mount_identifiers.txt | cut -f2`
+   if [[ -z $mountid ]]; then
+      echo "Identification string of the mount controller box neither given,"
+      echo  "  nor found in mount_identifiers.txt, aborting"
+      exit
+   else
+      echo "Mount identifier not given, using"
+      echo "  $mountid  from the list in mount_identifiers.txt"
+   fi
+else
+   mountid=$2
 fi
 
 echo "  - creating inst.XerxesMount...connect configuration"
 
 tail +2 config/inst.XerxesMount/inst.XerxesMount.#TEMPLATE.connect.yml >\
-        config/inst.XerxesMount/inst.XerxesMount.$2.connect.yml
+        config/inst.XerxesMount/inst.XerxesMount.$mountid.connect.yml
 
 
 ###############
@@ -87,7 +96,7 @@ CamSN=("$3" "$4" "$5" "$6");
 for i in {1..4}; do
   i1=$(( $i - 1))
   if [[ -z ${CamSN[$i1]} ]]; then
-      CamSN[$i1]=`grep "$unit, $i" cameras_PhysicalAddress.txt | cut -f 2 | sed -e s/QHY600M-//`
+      CamSN[$i1]=`grep "$unit, $i" cameras_SerialNumbers.txt | cut -f 2 | sed -e s/QHY600M-//`
   fi
 done
 
@@ -106,7 +115,7 @@ for i in {1..4}; do
   i1=$(( $i - 1))
   tail +3 config/obs.camera/obs.camera.#TEMPLATE.create.yml |\
         sed -e s/XXXXXXXXXXXXXXXXX/${CamSN[$i1]}/  -e s/lastXX/last$unit${side[$i1]}/g \
-            -e s/dataX/data1/ -e s/NN/$i/ -e s/NESW/${cardinal[$i1]}/ > \
+            -e s/dataX/data$(( ($i - 1) % 2 +1 ))/ -e s/NN/$i/ -e s/NESW/${cardinal[$i1]}/ > \
           config/obs.camera/obs.camera.$unit\_1_$i.create.yml
 done
 

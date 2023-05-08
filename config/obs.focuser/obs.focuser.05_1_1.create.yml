@@ -1,0 +1,4 @@
+PromptMirrorLock :  false
+
+#PhysicalAddress : pci-0000:48:00.0-usb-0:2:1.0 # The physical adress of the (USB) port to which the focuser is connected.
+PhysicalAddress : pci-0000:44:00.0-usb-0:2:1.0 # The physical adress of the (USB) port to which the focuser is connected.

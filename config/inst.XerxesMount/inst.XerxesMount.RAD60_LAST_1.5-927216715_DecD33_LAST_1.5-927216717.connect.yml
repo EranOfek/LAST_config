@@ -1,0 +1,10 @@
+HAMotorDirection  : 1 # +1 or -1
+DecMotorDirection : 1 # +1 or -1
+
+DefaultHAZeroPositionTicks  : 0 # reading of the HA encoder on the meridian
+DefaultDecZeroPositionTicks : -16777216 # reading of the Dec encoder at equatorial plane
+
+HAZeroPositionTicks  :    478880 # reading of the HA encoder on the meridian
+DecZeroPositionTicks : -16565353 # reading of the Dec encoder at equatorial plane
+
+Verbose : 1

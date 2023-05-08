@@ -1,0 +1,33 @@
+BinaryProjName           : 'LAST'
+NodeNumber         : 1   # 0 for rehovot, 1 for Neot Smadar
+TimeZone           : 2   # hours
+
+# how much hardware connected
+LocalTelescopes   :  [] # leave empty for master
+
+# write the following as string, which will be eval()'d in matlab
+RemoteTelescopes  :  '{1,2,3,4}' # syntax: {[indices for first slave], [indices for second], ...}
+
+# power switch drivers
+PowerDriver : [inst.tinycontrolIPpowerSocket,inst.tinycontrolIPpowerSocket] # [] to force to cell
+
+# camera power output assigments 
+#  (sad, but yml configuration doesn't allow a more sophysticated structure)
+CameraPowerUnit   : [1, 1, 2, 2]
+CameraPowerOutput : [1, 2, 5, 6]
+
+# mount driver (for now, a single one)
+MountDriver : inst.XerxesMountBinary
+MountPowerUnit   : 1
+MountPowerOutput : 3
+
+# camera drivers (as many as LocalTelescopes)
+CameraDriver : []
+
+# focuser drivers (as many as LocalTelescopes)
+FocuserDriver : []
+
+# Keys to be copied verbatim in FITS header (remember to keep the strict
+#  format [ ['FITSKEY','value'],... ] )
+FITSHeader        : []
+
