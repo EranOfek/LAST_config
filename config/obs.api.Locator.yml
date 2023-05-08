@@ -10,7 +10,7 @@
 #
 
 default:
- mount:     inst.XerxesMount
+ mount:     inst.XerxesMountBinary
  camera:    inst.QHYccd
  focuser:   inst.CelestronFocuser
  pswitch:   inst.tinycontrolIPpowerSocketNew
