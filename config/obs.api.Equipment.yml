@@ -1,7 +1,7 @@
 ---
 default:
 - mount:
-    driver: obs.mount
+    driver: inst.XerxesMountBinary
 - focuser:
     driver: inst.CelestronFocuser
 - camera:
