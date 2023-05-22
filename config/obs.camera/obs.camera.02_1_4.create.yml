@@ -20,4 +20,4 @@ CameraPos        : 'NW'
 # Based on plate adjustment done on 2022-06-08
 #TelescopeOffset  : [-1.11, 1.60]
 # Telescopes coaligned on 2022-11-13
-TelescopeOffset  : [0, 0]
+TelescopeOffset  : [0, 1.5]
