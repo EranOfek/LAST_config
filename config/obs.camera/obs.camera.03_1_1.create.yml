@@ -18,4 +18,4 @@ Filter           : 'clear'
 
 CameraNumber     : 1
 CameraPos        : 'NE'
-TelescopeOffset  : [1.0, 1.3]
+TelescopeOffset  : [0.78, 1.3]
