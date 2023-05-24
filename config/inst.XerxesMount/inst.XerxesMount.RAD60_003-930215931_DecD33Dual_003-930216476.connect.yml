@@ -4,7 +4,7 @@ DecMotorDirection : 1
 DefaultHAZeroPositionTicks  : -822481
 DefaultDecZeroPositionTicks : -17759475
 
-HAZeroPositionTicks :   -896947
-DecZeroPositionTicks : -17407437
+HAZeroPositionTicks :   -877131
+DecZeroPositionTicks : -17442051
 
 Verbose :  1
