@@ -14,7 +14,7 @@ default:
  camera:    inst.QHYccd
  focuser:   inst.CelestronFocuser
  pswitch:   inst.tinycontrolIPpowerSocketNew
- unit:      obs.unit
+ unit:      obs.webunit
 
 #
 # Per-host overwrites.  The example below shows, for host last02e:
