@@ -1,0 +1,22 @@
+# differently than other devices, at connect time we look for a specific 
+#  hardware Id. Hence PhysicalId is specified at object creation time and not
+#  later at connection time.
+PhysicalId  : QHY600M-000000000000000000
+Verbose     : true
+
+BaseDir          : '/last11e/data2/archive'
+DataDir          : 'new'
+LogFileDir       : '/last11e/data2/archive/log/'
+
+DarkDBDir        : '/last11e/data/ServiceImages/darkDB'
+FlatDBDir        : '/last11e/data/ServiceImages/flatDB'
+DarkDB           : 'darkDB.mat'
+FlatDB           : 'flatDB.mat'
+
+Filter           : 'clear'
+
+CameraNumber     : 2
+CameraPos        : 'SE'
+#TelescopeOffset  : [1.1, -1.65]
+# Telescopes coaligned on 2022-12-04
+TelescopeOffset  : [0, 0]
