@@ -11,8 +11,8 @@ TimeZone           : 2   # hours
 
 # camera power output assigments
 #  (sad, but yml configuration doesn't allow a more sophysticated structure)
-CameraPowerUnit   : [1, 1]
-CameraPowerOutput : [1, 2]
+CameraPowerUnit   : [1, 1, 1 ,1]
+CameraPowerOutput : [1, 2, 4, 5]
 
 # is the mount on this or on the other side?
 MountSide : 'e' # pleonastic, if derived from the Locator
@@ -25,7 +25,7 @@ MountPowerOutput : 3
 NumLocalTelescopes : 2
 
 # Number of cameras and focusers, i.e. telescopes handled by the twin unit
-NumRemoteTelescopes : 0
+NumRemoteTelescopes : 2
 
 # Keys to be copied verbatim in FITS header (remember to keep the strict
 #  format [ ['FITSKEY','value'],... ] )
