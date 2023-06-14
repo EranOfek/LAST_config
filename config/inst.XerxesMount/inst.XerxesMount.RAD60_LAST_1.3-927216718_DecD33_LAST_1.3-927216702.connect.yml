@@ -4,7 +4,7 @@ DecMotorDirection : 1 # +1 or -1
 DefaultHAZeroPositionTicks  : 0 # reading of the HA encoder on the meridian
 DefaultDecZeroPositionTicks : -16777216 # reading of the Dec encoder at equatorial plane
 
-HAZeroPositionTicks  :   -264489 # reading of the HA encoder on the meridian
-DecZeroPositionTicks : -16680914 # reading of the Dec encoder at equatorial plane
+HAZeroPositionTicks  :   -256812 # reading of the HA encoder on the meridian
+DecZeroPositionTicks : -16671344 # reading of the Dec encoder at equatorial plane
 
 Verbose : 1
