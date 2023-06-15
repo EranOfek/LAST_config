@@ -19,4 +19,4 @@ Filter           : 'clear'
 CameraNumber     : 4
 CameraPos        : 'NW'
 #TelescopeOffset  : [0.0, 0.0]
-TelescopeOffset  : [-1.04, 1.39]
+TelescopeOffset  : [-0.89, 1.43]
