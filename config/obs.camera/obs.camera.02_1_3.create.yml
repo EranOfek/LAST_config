@@ -22,4 +22,4 @@ CameraPos        : 'SW'
 # Telescopes coaligned on 2022-11-13
 #TelescopeOffset  : [0, 0]
 # Open mode on 2023=05-22
-TelescopeOffset  : [-1.11, -1.60]
+TelescopeOffset  : [-1.26, -1.54]
