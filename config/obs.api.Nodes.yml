@@ -5,12 +5,12 @@ Nodes:
 - Name: Neot Smadar
   NodeId: 1
   ProjectName: LAST
-  Mounts: 12
+  Units: 12
 
 - Name: Local
   NodeId: 1
   ProjectName: LOCAL
-  Mounts: 1
+  Units: 1
 
 #
 # The current node
@@ -19,4 +19,4 @@ This:
   Name: Neot Smadar
   NodeId: 1
   ProjectName: LAST
-  Mounts: 12
+  Units: 12
