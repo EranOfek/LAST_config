@@ -14,7 +14,8 @@ default:
  camera:    inst.QHYccd
  focuser:   inst.CelestronFocuser
  pswitch:   inst.tinycontrolIPpowerSocketNew
- unit:      obs.unit
+ #unit:      obs.unit
+ unit:      obs.webunit
 
 #
 # Per-host overwrites.  The example below shows, for host last02e:
@@ -40,10 +41,10 @@ default:
 #     fake some more information:
 #      NodeId and ProjectName - are taken from config/obs.api.Nodes.yml/This.{NodeId,ProjectName}
 #
-#      MountId, MountSide - must be supplied in the 'LOCAL' entry below
+#      UnitId, UnitSide - must be supplied in the 'LOCAL' entry below
 #
 #
 #LOCAL:
 # focuser: inst.CelestronFocuser
-# MountId: 7
-# MountSide: e
+# UnitId: 7
+# UnitSide: e
