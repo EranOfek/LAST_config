@@ -1,0 +1,33 @@
+ProjName           : 'LAST'  # pleonastic, if derived from the Locator
+NodeNumber         : 1       # pleonastic, if derived from the Locator
+TimeZone           : 2   # hours
+
+# configuration for a half unit, to start with.
+
+# locators should in principle be derivable all from ProjName, NodeNumber,
+#  Unit id and canonical names. Let's assume so to start with 
+
+# power switch locator: let's assume that is is always pswitch on the unit side
+
+# camera power output assigments
+#  (sad, but yml configuration doesn't allow a more sophysticated structure)
+CameraPowerUnit   : [1, 1, 1 ,1]
+CameraPowerOutput : [1, 2, 4, 5]
+
+# is the mount on this or on the other side?
+MountSide : 'e' # pleonastic, if derived from the Locator
+
+# mount power (for now, a single one)
+MountPowerUnit   : 1
+MountPowerOutput : 3
+
+# Number of cameras and focusers, i.e. telescopes
+NumLocalTelescopes : 2
+
+# Number of cameras and focusers, i.e. telescopes handled by the twin unit
+NumRemoteTelescopes : 2
+
+# Keys to be copied verbatim in FITS header (remember to keep the strict
+#  format [ ['FITSKEY','value'],... ] )
+FITSHeader        : []
+
