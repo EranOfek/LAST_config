@@ -21,4 +21,6 @@ CameraPos        : 'NE'
 # Telescopes coaligned on 2022-12-04
 #TelescopeOffset  : [0, 0]
 # Telescopes coaligned on 2023-05-23
-TelescopeOffset  : [1.04, 1.36]
+#TelescopeOffset  : [1.04, 1.36]
+# updated offset on 2023-11-06
+TelescopeOffset : [0.83, 1.31]

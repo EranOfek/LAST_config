@@ -20,4 +20,6 @@ CameraPos        : 'SW'
 #TelescopeOffset  : [-1.1, -1.65]
 # Telescopes coaligned on 2022-12-04
 #TelescopeOffset  : [0, 0]
-TelescopeOffset  : [-1.02, -1.44]
+#TelescopeOffset  : [-1.02, -1.44]
+# updated on 20231110
+TelescopeOffset  : [-1.22, -1.46]
