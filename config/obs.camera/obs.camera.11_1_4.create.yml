@@ -1,0 +1,21 @@
+# differently than other devices, at connect time we look for a specific 
+#  hardware Id. Hence PhysicalId is specified at object creation time and not
+#  later at connection time.
+PhysicalId  : QHY600M-468ed64d836d3a52b
+
+Verbose     : true
+
+BaseDir          : '/last11w/data2/archive' # The (existing) directory.
+DataDir          : 'new' # The (new) directory where the regular images will be stored.
+LogFileDir       : '/last11w/data2/archive/log/' # The directory wehere the log files will be stored.
+
+DarkDBDir        : '/last11w/data/ServiceImages/darkDB' # The directory where "Dark" images will be stored.
+FlatDBDir        : '/last11w/data/ServiceImages/flatDB' # The directory where "Flat" images will be stored.
+DarkDB           : 'darkDB.mat'
+FlatDB           : 'flatDB.mat'
+
+Filter           : 'clear'
+
+CameraNumber     : 4
+CameraPos        : 'NW'
+TelescopeOffset  : [0.0, 0.0]
