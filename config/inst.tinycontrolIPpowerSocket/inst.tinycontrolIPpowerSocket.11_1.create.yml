@@ -1,2 +1,1 @@
-#Host   :  pswitch06e   # IP or name of the switch
-Host   :  10.23.3.61 # 10.23.2.11   # IP or name of the switch
+Host   : 10.23.3.121  # IP assigned through the webby, change X to the number you wish
