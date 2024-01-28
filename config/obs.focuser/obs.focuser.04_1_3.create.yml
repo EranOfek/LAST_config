@@ -1,6 +1,6 @@
 PromptMirrorLock :  false
 
 # default card disappeared from system
-PhysicalAddress : pci-0000:49:00.0-usb-0:2:1.0 # The physical adress of the (USB) port to which the focuser is connected.
+#PhysicalAddress : pci-0000:49:00.0-usb-0:2:1.0 # The physical adress of the (USB) port to which the focuser is connected.
 
-# PhysicalAddress : pci-0000:48:00.0-usb-0:4:1.0 # moving to a different port on the other PCIe-USB card
+PhysicalAddress : pci-0000:49:00.0-usb-0:4:1.0 # moving to a different port on the other PCIe-USB card
