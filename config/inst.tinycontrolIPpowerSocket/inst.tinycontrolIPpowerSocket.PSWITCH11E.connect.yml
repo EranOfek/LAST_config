@@ -1,1 +1,1 @@
-Outputs : [1, 1, 1, 1, 1, 1]  # desired initial status of the outputs
+Outputs : [0, 0, 0, 1, 1, 1]  # desired initial status of the outputs
