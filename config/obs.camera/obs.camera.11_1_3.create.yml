@@ -1,7 +1,8 @@
 # differently than other devices, at connect time we look for a specific 
 #  hardware Id. Hence PhysicalId is specified at object creation time and not
 #  later at connection time.
-PhysicalId  : QHY600M-a9bc9b49b4cc52c65
+#PhysicalId  : QHY600M-a9bc9b49b4cc52c65
+PhysicalId  : QHY600M-bf76524394732ceb2
 
 Verbose     : true
 
