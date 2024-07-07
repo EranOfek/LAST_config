@@ -1,2 +1,5 @@
 UnitHosts : ['last01e', 'last02w', 'last03e', 'last04e', 'last05e', 
              'last06e', 'last08e', 'last10e']
+
+Logging : true
+LoggingDir : '~/log'
