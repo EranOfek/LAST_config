@@ -3,3 +3,5 @@ UnitHosts : ['last01e', 'last02e', 'last03e', 'last04e', 'last05e',
 
 Logging : true
 LoggingDir : '~/log'
+
+UnitTerminal: 'silentx' # no visible shell, plotting possible but will die when caller logs out
