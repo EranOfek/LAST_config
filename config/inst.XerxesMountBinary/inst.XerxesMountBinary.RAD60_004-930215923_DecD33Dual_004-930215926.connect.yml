@@ -1,0 +1,14 @@
+# this is the controller currently on M8
+HAMotorDirection  : 1
+DecMotorDirection : 1
+
+DefaultHAZeroPositionTicks  : -1848166
+DefaultDecZeroPositionTicks : -14529572
+
+HAZeroPositionTicks :  -2065271
+DecZeroPositionTicks : -14455346
+
+Verbose :  1
+
+# increase retries, because communication is problematic
+CommandRetries : 4
