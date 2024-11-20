@@ -2,4 +2,8 @@
 #
 PromptMirrorLock :  false
 
-PhysicalAddress : XXXX # The physical adress of the (USB) port to which the focuser is connected.
+PhysicalAddress : XXXX # The physical address of the (USB) port to which the focuser is connected.
+
+FocusValT20 : []
+FocusTempDeriv : []
+
