@@ -2,6 +2,6 @@
 PromptMirrorLock : false
 
 PhysicalAddress : pci-0000:49:00.0-usb-0:2:1.0
-FocusValT20 : []
+FocusValT20 : 3.447474e+04
 FocusTempDeriv : []
 
