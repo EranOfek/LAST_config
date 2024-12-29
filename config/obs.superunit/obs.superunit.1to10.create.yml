@@ -4,5 +4,7 @@ UnitHosts : ['last01e', 'last02e', 'last03e', 'last04e', 'last05e',
 Logging : true
 LoggingDir : '~/log'
 
-UnitTerminal: 'silentx' # no visible shell, plotting possible but will die when caller logs out
-SlaveTerminals: 'silentx' # we need it for the focus plot popups, unfortunately
+#UnitTerminal: 'silentx' # no visible shell, plotting possible but will die when caller logs out
+#SlaveTerminals: 'silentx' # we need it for the focus plot popups, unfortunately
+UnitTerminal: 'none' #
+SlaveTerminals: 'none' #
