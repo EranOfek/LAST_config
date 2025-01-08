@@ -3,6 +3,6 @@ PromptMirrorLock :  false
 #PhysicalAddress : pci-0000:02:00.0-usb-0:2:1.0 # The physical adress of the (USB) port to which the focuser is connected.
 PhysicalAddress : pci-0000:43:00.0-usb-0:1:1.0 # On motherboard, not Renesas card
 
-FocusValT20 : []
+FocusValT20 : 3.129937e+04
 FocusTempDeriv : []
 
