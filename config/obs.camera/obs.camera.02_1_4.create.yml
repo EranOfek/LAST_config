@@ -23,3 +23,8 @@ CameraPos        : 'NW'
 #TelescopeOffset  : [0, 1.5]
 # Open mode on 2023-05-22
 TelescopeOffset  : [-1.32, 1.48]
+
+# Keys to be copied verbatim in FITS header (remember to keep the strict
+#  format [ [FITSKEY,value],... ] )
+ExtraFITSHeader        : [[OPT_CLN,2460639,Last time optics was cleaned, JD]]
+
