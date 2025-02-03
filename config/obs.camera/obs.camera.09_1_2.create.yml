@@ -18,7 +18,7 @@ Filter           : 'clear'
 
 CameraNumber     : 2
 CameraPos        : 'SE'
-TelescopeOffset  : [0.0, 0.0]
+TelescopeOffset  : [1.0, -1.5]
 
 # Keys to be copied verbatim in FITS header (remember to keep the strict
 #  format [ [FITSKEY,value],... ] )
