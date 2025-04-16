@@ -15,7 +15,3 @@ CameraDriver : ['inst.QHYccd']
 
 # focuser drivers (as many as LocalTelescopes)
 FocuserDriver : ['inst.CelestronFocuser']
-
-# explicitely turn off PV at creation, otherwise .GeneralStatus, .Temperature
-#  etc. pushes would overwrite those of the Master (wrongly)
-PushPropertyChanges : false
