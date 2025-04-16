@@ -1,5 +1,6 @@
 # This is a template, please create a copy before changing anything
-Id : 'XX'     # rewrite the Id
+Id : 'XX'       # rewrite the Id
+Master : false  # explicitely flag as a slave
 
 # how much hardware connected
 LocalTelescopes   :  [NN] # One local telescope (1-4)
@@ -15,3 +16,7 @@ CameraDriver : ['inst.QHYccd']
 
 # focuser drivers (as many as LocalTelescopes)
 FocuserDriver : ['inst.CelestronFocuser']
+
+# explicitely turn off PV at creation, otherwise .GeneralStatus, .Temperature
+#  etc. pushes would overwrite those of the Master (wrongly)
+PushPropertyChanges : false

@@ -1,7 +1,8 @@
-Id : '01'    # rewrite the Id
+Id : '01'       # rewrite the Id
+Master : false  # explicitely flag as a slave
 
 # how much hardware connected
-LocalTelescopes   :  [1]
+LocalTelescopes   :  [1] # One local telescope (1-4)
 
 # write the following as string, which will be eval()'d in matlab
 RemoteTelescopes  :  '{}' # syntax: {[indices for first slave], [indices for second], ...}
@@ -14,3 +15,7 @@ CameraDriver : ['inst.QHYccd']
 
 # focuser drivers (as many as LocalTelescopes)
 FocuserDriver : ['inst.CelestronFocuser']
+
+# explicitely turn off PV at creation, otherwise .GeneralStatus, .Temperature
+#  etc. pushes would overwrite those of the Master (wrongly)
+PushPropertyChanges : false
