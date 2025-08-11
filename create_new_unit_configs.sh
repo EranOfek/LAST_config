@@ -36,7 +36,7 @@ echo "  - creating power switches configurations"
 
 ## TODO: a flag for changing between staging and production IP addresses
 subnet=3; # 2 in production
-ipbase=50; # 0 in production
+ipbase=100; # 0 in production
 address1=$(( $ipbase + 2 * $unit - 1 ))
 address2=$(( $ipbase + 2 * $unit ))
 
