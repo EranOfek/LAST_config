@@ -7,5 +7,5 @@ PhysicalAddress : pci-0000:45:00.1-usb-0:4.2:1.0 # or maybe 0:4.1:1.0 ??
 
 
 FocusValT20 : 3.442925e+04
-FocusTempDeriv : []
+FocusTempDeriv : 17.235
 
