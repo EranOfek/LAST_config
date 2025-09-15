@@ -8,3 +8,5 @@ HAZeroPositionTicks  :    327797 # reading of the HA encoder on the meridian
 DecZeroPositionTicks : -16737864 # reading of the Dec encoder at equatorial plane
 
 Verbose : 1
+
+Acceleration: [9,18]

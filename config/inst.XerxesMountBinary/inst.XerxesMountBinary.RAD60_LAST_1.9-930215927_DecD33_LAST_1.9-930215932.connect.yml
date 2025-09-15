@@ -9,5 +9,4 @@ DecZeroPositionTicks : -16615452 # reading of the Dec encoder at equatorial plan
 
 Verbose : 1
 
-SlewSpeed: 4
-Acceleration: 3
+Acceleration: [9,18]

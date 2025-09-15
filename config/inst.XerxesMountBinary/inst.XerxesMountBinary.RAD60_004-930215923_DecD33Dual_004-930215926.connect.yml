@@ -12,3 +12,5 @@ Verbose :  1
 
 # increase retries, because communication is problematic
 CommandRetries : 4
+
+Acceleration: [9,18]
