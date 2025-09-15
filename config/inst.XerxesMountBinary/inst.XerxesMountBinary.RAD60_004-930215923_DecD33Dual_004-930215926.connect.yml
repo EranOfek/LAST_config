@@ -13,4 +13,5 @@ Verbose :  1
 # increase retries, because communication is problematic
 CommandRetries : 4
 
+SlewSpeed: 12  # this mount has, maybe by mistake, default HA 18
 Acceleration: [9,18]
