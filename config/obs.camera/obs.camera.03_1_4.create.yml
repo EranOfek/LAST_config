@@ -22,5 +22,5 @@ TelescopeOffset  : [-1.34, 1.52]
 
 # Keys to be copied verbatim in FITS header (remember to keep the strict
 #  format [ [FITSKEY,value],... ] )
-ExtraFITSHeader        : [[OPT_CLN,2460668,Last time optics was cleaned, JD]]
+ExtraFITSHeader        : [[OPT_CLN,2460993,Last time optics was cleaned, JD]]
 

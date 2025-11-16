@@ -19,3 +19,7 @@ Filter           : 'clear'
 CameraNumber     : 1
 CameraPos        : 'NE'
 TelescopeOffset  : [1.0, 1.5]
+
+# Keys to be copied verbatim in FITS header (remember to keep the strict
+#  format [ [FITSKEY,value],... ] )
+ExtraFITSHeader        : [[OPT_CLN,2460993,Last time optics was cleaned, JD]]

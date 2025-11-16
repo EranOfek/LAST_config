@@ -23,3 +23,7 @@ CameraPos        : 'SW'
 #TelescopeOffset  : [-1.02, -1.44]
 # updated on 20231110
 TelescopeOffset  : [-1.22, -1.46]
+
+# Keys to be copied verbatim in FITS header (remember to keep the strict
+#  format [ [FITSKEY,value],... ] )
+ExtraFITSHeader        : [[OPT_CLN,2460993,Last time optics was cleaned, JD]]
