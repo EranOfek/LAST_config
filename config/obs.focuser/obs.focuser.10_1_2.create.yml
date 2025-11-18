@@ -2,6 +2,6 @@ PromptMirrorLock :  false
 
 PhysicalAddress : pci-0000:45:00.1-usb-0:2:1.0 # The physical adress of the (USB) port to which the focuser is connected.
 
-FocusValT20 : 3.330893e+04
+FocusValT20 : 3.336657e+04
 FocusTempDeriv : 15.25
 
