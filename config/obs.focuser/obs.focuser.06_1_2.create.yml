@@ -4,6 +4,6 @@ PromptMirrorLock :  false
 PhysicalAddress : pci-0000:49:00.0-usb-0:2:1.0 #
 #PhysicalAddress : pci-0000:43:00.0-usb-0:1:1.0 # On newer Ubuntu 22 PC, not Renesas card
 
-FocusValT20 : 3.130737e+04
+FocusValT20 : 3.132338e+04
 FocusTempDeriv : 16.425
 
