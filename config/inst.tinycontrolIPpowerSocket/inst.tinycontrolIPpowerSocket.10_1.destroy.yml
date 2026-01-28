@@ -1,1 +1,2 @@
-Outputs : [0, 0, 0, 0, 0, 0]  # desired status of the outputs at disconnect (computers must remain on in the relevant unit)
+Outputs : [0, 0, 0, 0, 1, 0]  # desired status of the outputs at disconnect (computers must remain on in the relevant unit)
+# last0 has been connected to output(5) in order to be controllable
