@@ -1,4 +1,5 @@
-Id : '11'     # rewrite the Id
+Id : '11'       # rewrite the Id
+Master : false  # explicitely flag as a slave
 
 # how much hardware connected
 LocalTelescopes   :  [4] # One local telescope (1-4)

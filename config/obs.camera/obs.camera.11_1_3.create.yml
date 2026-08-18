@@ -1,7 +1,6 @@
 # differently than other devices, at connect time we look for a specific 
 #  hardware Id. Hence PhysicalId is specified at object creation time and not
 #  later at connection time.
-#PhysicalId  : QHY600M-a9bc9b49b4cc52c65
 PhysicalId  : QHY600M-3ada5f4babd9b5c3c
 
 Verbose     : true
@@ -20,3 +19,8 @@ Filter           : 'clear'
 CameraNumber     : 3
 CameraPos        : 'SW'
 TelescopeOffset  : [0.0, 0.0]
+
+# Keys to be copied verbatim in FITS header (remember to keep the strict
+#  format [ [FITSKEY,value],... ] )
+ExtraFITSHeader        : [[OPT_CLN,0,Last time optics was cleaned, JD]]
+
