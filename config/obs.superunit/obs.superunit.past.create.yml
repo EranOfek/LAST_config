@@ -1,1 +1,4 @@
 UnitHosts : ['last21e']
+
+Logging : true
+LoggingDir : '~/log'
