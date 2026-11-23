@@ -5,3 +5,4 @@ PhysicalAddress : pci-0000:45:00.1-usb-0:4.3:1.0 # The physical adress of the (U
 FocusValT20 : 3.475307e+04
 FocusTempDeriv : 15.352
 
+CalibratedAtJD: 2461368.110952
